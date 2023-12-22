@@ -69,8 +69,10 @@ struct PagoOnboardingView: View {
             .padding(.horizontal, Constants.padding)
             .opacity(showContinueButton)
         }
-        .task {
-            self.uiModel = await dataModel.createOnboardingUIModel()
+        .onAppear {
+            Task { @MainActor in
+                self.uiModel = await dataModel.createOnboardingUIModel()
+            }
         }
     }
 }
