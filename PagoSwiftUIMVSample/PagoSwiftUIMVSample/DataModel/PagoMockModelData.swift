@@ -9,5 +9,4 @@ import Foundation
 
 class PagoMockModelData: PagoModelData {
     
-    // here we can mock data
 }

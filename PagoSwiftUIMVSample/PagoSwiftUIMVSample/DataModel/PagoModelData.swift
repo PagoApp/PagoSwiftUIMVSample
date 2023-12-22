@@ -8,12 +8,15 @@
 import Foundation
 import PagoUISDK
 
-class PagoModelData: ObservableObject {
+protocol PagoModelDataType: ObservableObject {
+    func createOnboardingUIModel() async -> PagoOnboardingUIModel
+}
+
+class PagoModelData: PagoModelDataType {
     
     // MARK: - Properties (private(set))
     
     @Published private(set) var contentUIModel = PagoContentUIModel()
-    @Published private(set) var onboardingUIModel = PagoOnboardingUIModel()
     
     // MARK: - Properties (private)
     
@@ -34,26 +37,26 @@ class PagoModelData: ObservableObject {
         contentUIModel.labelText = String(countValue)
     }
     
-    func index(for page: PagoOnboardingPageUIModel) -> Int {
-        onboardingUIModel.pages.firstIndex { $0.id == page.id } ?? 0
-    }
-    
     // MARK: - Methods (private)
     
     private func setupUIModels() {
         setupContentUIModel()
-        setupOnboardingUIModel()
     }
     
     private func setupContentUIModel() {
-        contentRepository.getInfoScreen { [unowned self] uiModel in
+        contentRepository.getInfoScreen { [weak self] uiModel in
+            guard let self else { return }
+            
             self.contentUIModel = uiModel
         }
     }
     
-    private func setupOnboardingUIModel() {
-        onboardingRepository.getOnboardingScreen { [unowned self] uiModel in
-            self.onboardingUIModel = uiModel
-        }
+    func createOnboardingUIModel() async -> PagoOnboardingUIModel {
+        await withCheckedContinuation { continuation in
+            onboardingRepository.getOnboardingScreen { uiModel in
+                continuation.resume(returning: uiModel)
+            }
+          }
+        
     }
 }

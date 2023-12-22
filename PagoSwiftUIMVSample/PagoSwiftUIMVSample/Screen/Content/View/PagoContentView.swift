@@ -26,6 +26,7 @@ struct PagoContentView: View {
     @State var navigateToOnboardingView = false
     @State var countValue = 0
     
+    
     // MARK: - Body (internal)
     
     var body: some View {

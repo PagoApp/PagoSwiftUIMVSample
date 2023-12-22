@@ -9,9 +9,14 @@ import UIKit
 @_implementationOnly import PagoApiClient
 @_implementationOnly import PagoCoreSDK
 
+
+protocol PagoSUNetworkType {
+    func getContentData(completion: @escaping (PagoOperationStatus<PagoContentResponseData?>)->())
+    func getOnboardingData(completion: @escaping (PagoOperationStatus<PagoOnboardingResponseData?>)->())
+}
 // MARK: - PagoSUNetwork (internal)
 
-class PagoSUNetwork {
+class PagoSUNetwork: PagoSUNetworkType {
     
     // MARK: - Static properties (internal)
     

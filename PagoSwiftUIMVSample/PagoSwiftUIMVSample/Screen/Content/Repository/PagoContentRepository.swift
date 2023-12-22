@@ -8,13 +8,21 @@
 import Foundation
 import PagoUISDK
 
+protocol PagoContentRepositoryType: PagoRepository {
+    func getInfoScreen(completion: @escaping (PagoContentUIModel)->())
+}
+
 // MARK: - PagoContentRepository (internal)
 
-struct PagoContentRepository: PagoRepository {
+struct PagoContentRepository: PagoContentRepositoryType {
     
     // MARK: - Properties (internal)
     
-    let network = PagoSUNetwork()
+    let network: PagoSUNetworkType
+    
+    init(network: PagoSUNetworkType = PagoSUNetwork()) {
+        self.network = network
+    }
     
     // MARK: - Methods (internal)
     

@@ -14,8 +14,8 @@ struct PagoOnboardingPageUIModel: Model, Identifiable {
     
     // MARK: - Properties (internal)
     
-    var labelText: String
-    var imageURLString: String
+    let labelText: String
+    let imageURLString: String
     
     // MARK: - Computed properties (internal)
     

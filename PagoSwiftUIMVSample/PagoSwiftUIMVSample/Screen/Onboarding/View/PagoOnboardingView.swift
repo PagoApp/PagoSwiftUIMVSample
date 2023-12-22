@@ -22,10 +22,9 @@ struct PagoOnboardingView: View {
     // MARK: - Data & UI model (internal)
     
     @EnvironmentObject var dataModel: PagoModelData
-    var uiModel: PagoOnboardingUIModel {
-        dataModel.onboardingUIModel
-    }
     
+    @State var uiModel: PagoOnboardingUIModel
+
     // MARK: - States (internal)
     
     @State var currentIndex = 0
@@ -70,6 +69,9 @@ struct PagoOnboardingView: View {
             .padding(.horizontal, Constants.padding)
             .opacity(showContinueButton)
         }
+        .task {
+            self.uiModel = await dataModel.createOnboardingUIModel()
+        }
     }
 }
 
@@ -81,7 +83,7 @@ private extension PagoOnboardingView {
         TabView(selection: $currentIndex) {
             ForEach(uiModel.pages) { uiModel in
                 createPage(uiModel)
-                    .tag(dataModel.index(for: uiModel))
+                    .tag(uiModel.index(for: uiModel))
             }
         }
         .tabViewStyle(.page(indexDisplayMode: .never))
@@ -100,6 +102,14 @@ private extension PagoOnboardingView {
                 .fixedSize(horizontal: false, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
                 .padding(.horizontal, Constants.padding)
         }
+    }
+}
+
+// MARK: - PagoOnboardingUIModel ( fileprivate - data logic )
+
+fileprivate extension PagoOnboardingUIModel {
+    func index(for page: PagoOnboardingPageUIModel) -> Int {
+        pages.firstIndex { $0.id == page.id } ?? 0
     }
 }
 

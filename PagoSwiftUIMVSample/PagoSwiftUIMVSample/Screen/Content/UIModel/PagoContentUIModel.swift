@@ -8,9 +8,10 @@
 import UIKit
 import PagoUISDK
 
+
 // MARK: - PagoContentUIModel (internal)
 
-struct PagoContentUIModel: Model {
+struct PagoContentUIModel {
     
     // MARK: - Properties (internal)
     
