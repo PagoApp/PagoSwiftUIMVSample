@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="PagoEmptyScreenView" customModule="Pago" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="539" height="386"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="434" placeholderIntrinsicHeight="128" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="x2y-0S-UH1">
+                    <rect key="frame" x="24" y="122" width="491" height="142"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty_provider_search" translatesAutoresizingMaskIntoConstraints="NO" id="ZPH-8Z-lhK">
+                            <rect key="frame" x="0.0" y="0.0" width="491" height="75"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="75" id="y4J-4G-6BC"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nu am găsit furnizorul" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PuQ-NT-kab">
+                            <rect key="frame" x="0.0" y="75" width="491" height="24"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <color key="textColor" red="0.40784313729999999" green="0.40784313729999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="textId" value="CC1E1D83-AE96-47CF-824A-F5DD57EE7786"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lasă-ne o sugestie și îi vom contacta cu o propunere să fie adăugați în aplicație." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nfp-5o-32n">
+                            <rect key="frame" x="0.0" y="99" width="491" height="43"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <color key="textColor" red="0.43529411759999997" green="0.43529411759999997" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="x2y-0S-UH1" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="MNB-pg-5rl"/>
+                <constraint firstItem="x2y-0S-UH1" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="kEq-r0-p2Q"/>
+                <constraint firstItem="x2y-0S-UH1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="24" id="mk3-SI-lxh"/>
+                <constraint firstAttribute="trailing" secondItem="x2y-0S-UH1" secondAttribute="trailing" constant="24" id="y5U-dY-LwR"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="detailLabel" destination="nfp-5o-32n" id="NEc-JB-MF5"/>
+                <outlet property="headerImageView" destination="ZPH-8Z-lhK" id="xjk-6S-j5n"/>
+                <outlet property="stackView" destination="x2y-0S-UH1" id="xN5-sL-bXo"/>
+                <outlet property="titleLabel" destination="PuQ-NT-kab" id="ylh-Vh-gjE"/>
+            </connections>
+            <point key="canvasLocation" x="167.39130434782609" y="357.58928571428572"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="empty_provider_search" width="294" height="75"/>
+    </resources>
+</document>

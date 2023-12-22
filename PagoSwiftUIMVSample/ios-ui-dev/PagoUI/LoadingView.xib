@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12120"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoadingView" customModule="Pago" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view alpha="0.80000000000000004" contentMode="scaleToFill" id="iN0-l3-epB" customClass="LoadingView" customModule="Pago" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rc1-VG-Az7">
+                    <rect key="frame" x="148.5" y="294.5" width="77" height="77"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="77" id="Yai-id-Hb8"/>
+                        <constraint firstAttribute="width" secondItem="rc1-VG-Az7" secondAttribute="height" multiplier="1:1" id="b2q-of-e4H"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="rc1-VG-Az7" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="DCU-N9-fqw"/>
+                <constraint firstItem="rc1-VG-Az7" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Gmw-hD-IFF"/>
+            </constraints>
+            <connections>
+                <outlet property="gifContainer" destination="rc1-VG-Az7" id="wun-Qh-y8d"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="104.5"/>
+        </view>
+    </objects>
+</document>

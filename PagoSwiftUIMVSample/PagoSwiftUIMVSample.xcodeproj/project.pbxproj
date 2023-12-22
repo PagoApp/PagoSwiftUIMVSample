@@ -1,0 +1,682 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		393931042B34429B0015B434 /* PagoOnboardingUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393931032B34429B0015B434 /* PagoOnboardingUIModel.swift */; };
+		3939310F2B3442D70015B434 /* PagoOnboardingPageUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3939310E2B3442D70015B434 /* PagoOnboardingPageUIModel.swift */; };
+		393931112B344D360015B434 /* PagoOnboardingResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393931102B344D360015B434 /* PagoOnboardingResponseData.swift */; };
+		393931142B344FDE0015B434 /* PagoOnboardingRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393931132B344FDE0015B434 /* PagoOnboardingRepository.swift */; };
+		39615E642B334EB100F86E09 /* PagoOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39615E632B334EB100F86E09 /* PagoOnboardingView.swift */; };
+		3964F4C02B33068100C9907C /* PagoSwiftUIMVSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3964F4BF2B33068100C9907C /* PagoSwiftUIMVSampleApp.swift */; };
+		3964F4C22B33068100C9907C /* PagoContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3964F4C12B33068100C9907C /* PagoContentView.swift */; };
+		3964F4C42B33068200C9907C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3964F4C32B33068200C9907C /* Assets.xcassets */; };
+		3964F4C72B33068200C9907C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3964F4C62B33068200C9907C /* Preview Assets.xcassets */; };
+		3964F4EB2B33086600C9907C /* PagoModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3964F4EA2B33086600C9907C /* PagoModelData.swift */; };
+		3964F4ED2B330E5800C9907C /* PagoMockModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3964F4EC2B330E5800C9907C /* PagoMockModelData.swift */; };
+		3964F5122B33138500C9907C /* PagoUISDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3964F5092B33117200C9907C /* PagoUISDK.framework */; };
+		3964F5132B33138500C9907C /* PagoUISDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3964F5092B33117200C9907C /* PagoUISDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3964F5152B33138C00C9907C /* PagoCoreSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3964F4F52B33116000C9907C /* PagoCoreSDK.framework */; };
+		3964F5162B33138C00C9907C /* PagoCoreSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3964F4F52B33116000C9907C /* PagoCoreSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3964F5172B33139000C9907C /* PagoApiClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3964F4FE2B33116A00C9907C /* PagoApiClient.framework */; };
+		3964F5182B33139000C9907C /* PagoApiClient.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3964F4FE2B33116A00C9907C /* PagoApiClient.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3964F51D2B331BB600C9907C /* PagoContentUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3964F51C2B331BB600C9907C /* PagoContentUIModel.swift */; };
+		3964F5322B33345200C9907C /* PagoSUApiClientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3964F5312B33345200C9907C /* PagoSUApiClientManager.swift */; };
+		3964F5342B33346300C9907C /* PagoSUNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3964F5332B33346300C9907C /* PagoSUNetwork.swift */; };
+		3964F5362B333B4500C9907C /* PagoContentResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3964F5352B333B4500C9907C /* PagoContentResponseData.swift */; };
+		3964F5382B333DE600C9907C /* PagoContentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3964F5372B333DE600C9907C /* PagoContentRepository.swift */; };
+		39691DA22B34868E00347303 /* PagoContentViewRefactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39691DA12B34868D00347303 /* PagoContentViewRefactory.swift */; };
+		39691DB12B348B8100347303 /* PagoOnboardingViewRefactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39691DB02B348B8100347303 /* PagoOnboardingViewRefactory.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3964F4F42B33116000C9907C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3964F4EE2B33116000C9907C /* PagoCoreSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 069A08F7283D09F9001D2F26;
+			remoteInfo = PagoCoreSDK;
+		};
+		3964F4F62B33116000C9907C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3964F4EE2B33116000C9907C /* PagoCoreSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 069A0901283D09F9001D2F26;
+			remoteInfo = PagoCoreSDKTests;
+		};
+		3964F4FD2B33116A00C9907C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3964F4F82B33116A00C9907C /* PagoApiClient.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4EF786BF283E08A8007F65DA;
+			remoteInfo = PagoApiClient;
+		};
+		3964F4FF2B33116A00C9907C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3964F4F82B33116A00C9907C /* PagoApiClient.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4EF786C9283E08A8007F65DA;
+			remoteInfo = PagoApiClientTests;
+		};
+		3964F5082B33117200C9907C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3964F5012B33117200C9907C /* PagoUI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 065E572C27C7E9100059C508;
+			remoteInfo = PagoUISDK;
+		};
+		3964F50A2B33117200C9907C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3964F5012B33117200C9907C /* PagoUI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 065E573627C7E9100059C508;
+			remoteInfo = PagoUITests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3964F5142B33138500C9907C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3964F5182B33139000C9907C /* PagoApiClient.framework in Embed Frameworks */,
+				3964F5132B33138500C9907C /* PagoUISDK.framework in Embed Frameworks */,
+				3964F5162B33138C00C9907C /* PagoCoreSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		393931032B34429B0015B434 /* PagoOnboardingUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagoOnboardingUIModel.swift; sourceTree = "<group>"; };
+		3939310E2B3442D70015B434 /* PagoOnboardingPageUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagoOnboardingPageUIModel.swift; sourceTree = "<group>"; };
+		393931102B344D360015B434 /* PagoOnboardingResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagoOnboardingResponseData.swift; sourceTree = "<group>"; };
+		393931132B344FDE0015B434 /* PagoOnboardingRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagoOnboardingRepository.swift; sourceTree = "<group>"; };
+		39615E632B334EB100F86E09 /* PagoOnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagoOnboardingView.swift; sourceTree = "<group>"; };
+		3964F4BC2B33068100C9907C /* PagoSwiftUIMVSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PagoSwiftUIMVSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3964F4BF2B33068100C9907C /* PagoSwiftUIMVSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagoSwiftUIMVSampleApp.swift; sourceTree = "<group>"; };
+		3964F4C12B33068100C9907C /* PagoContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagoContentView.swift; sourceTree = "<group>"; };
+		3964F4C32B33068200C9907C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3964F4C62B33068200C9907C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3964F4EA2B33086600C9907C /* PagoModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagoModelData.swift; sourceTree = "<group>"; };
+		3964F4EC2B330E5800C9907C /* PagoMockModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagoMockModelData.swift; sourceTree = "<group>"; };
+		3964F4EE2B33116000C9907C /* PagoCoreSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PagoCoreSDK.xcodeproj; path = "ios-core-dev/PagoCoreSDK.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		3964F4F82B33116A00C9907C /* PagoApiClient.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PagoApiClient.xcodeproj; path = "ios-network-dev/PagoApiClient.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		3964F5012B33117200C9907C /* PagoUI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PagoUI.xcodeproj; path = "ios-ui-dev/PagoUI.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		3964F51C2B331BB600C9907C /* PagoContentUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagoContentUIModel.swift; sourceTree = "<group>"; };
+		3964F5312B33345200C9907C /* PagoSUApiClientManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagoSUApiClientManager.swift; sourceTree = "<group>"; };
+		3964F5332B33346300C9907C /* PagoSUNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagoSUNetwork.swift; sourceTree = "<group>"; };
+		3964F5352B333B4500C9907C /* PagoContentResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagoContentResponseData.swift; sourceTree = "<group>"; };
+		3964F5372B333DE600C9907C /* PagoContentRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagoContentRepository.swift; sourceTree = "<group>"; };
+		39691DA12B34868D00347303 /* PagoContentViewRefactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagoContentViewRefactory.swift; sourceTree = "<group>"; };
+		39691DB02B348B8100347303 /* PagoOnboardingViewRefactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagoOnboardingViewRefactory.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3964F4B92B33068100C9907C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3964F5172B33139000C9907C /* PagoApiClient.framework in Frameworks */,
+				3964F5122B33138500C9907C /* PagoUISDK.framework in Frameworks */,
+				3964F5152B33138C00C9907C /* PagoCoreSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3939310D2B3442C90015B434 /* UIModel */ = {
+			isa = PBXGroup;
+			children = (
+				3939310E2B3442D70015B434 /* PagoOnboardingPageUIModel.swift */,
+				393931032B34429B0015B434 /* PagoOnboardingUIModel.swift */,
+			);
+			path = UIModel;
+			sourceTree = "<group>";
+		};
+		393931122B344D3D0015B434 /* ResponseData */ = {
+			isa = PBXGroup;
+			children = (
+				3964F5352B333B4500C9907C /* PagoContentResponseData.swift */,
+				393931102B344D360015B434 /* PagoOnboardingResponseData.swift */,
+			);
+			path = ResponseData;
+			sourceTree = "<group>";
+		};
+		39615E5A2B334E9400F86E09 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				3939310D2B3442C90015B434 /* UIModel */,
+				39691DAC2B348A4100347303 /* Repository */,
+				39691DAB2B348A3500347303 /* View */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		3964F4B32B33068100C9907C = {
+			isa = PBXGroup;
+			children = (
+				3964F4BE2B33068100C9907C /* PagoSwiftUIMVSample */,
+				3964F4BD2B33068100C9907C /* Products */,
+				3964F5112B33138500C9907C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3964F4BD2B33068100C9907C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3964F4BC2B33068100C9907C /* PagoSwiftUIMVSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3964F4BE2B33068100C9907C /* PagoSwiftUIMVSample */ = {
+			isa = PBXGroup;
+			children = (
+				3964F4EE2B33116000C9907C /* PagoCoreSDK.xcodeproj */,
+				3964F4F82B33116A00C9907C /* PagoApiClient.xcodeproj */,
+				3964F5012B33117200C9907C /* PagoUI.xcodeproj */,
+				3964F51A2B33184900C9907C /* AppScene */,
+				3964F5102B33133600C9907C /* DataModel */,
+				3964F5192B33182100C9907C /* Screen */,
+				3964F52E2B3332A000C9907C /* Network */,
+				3964F4C32B33068200C9907C /* Assets.xcassets */,
+				3964F4C52B33068200C9907C /* Preview Content */,
+			);
+			path = PagoSwiftUIMVSample;
+			sourceTree = "<group>";
+		};
+		3964F4C52B33068200C9907C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3964F4C62B33068200C9907C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3964F4EF2B33116000C9907C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3964F4F52B33116000C9907C /* PagoCoreSDK.framework */,
+				3964F4F72B33116000C9907C /* PagoCoreSDKTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3964F4F92B33116A00C9907C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3964F4FE2B33116A00C9907C /* PagoApiClient.framework */,
+				3964F5002B33116A00C9907C /* PagoApiClientTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3964F5022B33117200C9907C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3964F5092B33117200C9907C /* PagoUISDK.framework */,
+				3964F50B2B33117200C9907C /* PagoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3964F5102B33133600C9907C /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				3964F4EA2B33086600C9907C /* PagoModelData.swift */,
+				3964F4EC2B330E5800C9907C /* PagoMockModelData.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		3964F5112B33138500C9907C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3964F5192B33182100C9907C /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				3964F51E2B331BBE00C9907C /* Content */,
+				39615E5A2B334E9400F86E09 /* Onboarding */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		3964F51A2B33184900C9907C /* AppScene */ = {
+			isa = PBXGroup;
+			children = (
+				3964F4BF2B33068100C9907C /* PagoSwiftUIMVSampleApp.swift */,
+			);
+			path = AppScene;
+			sourceTree = "<group>";
+		};
+		3964F51E2B331BBE00C9907C /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				39691DAD2B348A7B00347303 /* UIModel */,
+				39691DAE2B348A8300347303 /* Repository */,
+				39691DAF2B348A9000347303 /* View */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+		3964F52E2B3332A000C9907C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				393931122B344D3D0015B434 /* ResponseData */,
+				3964F5312B33345200C9907C /* PagoSUApiClientManager.swift */,
+				3964F5332B33346300C9907C /* PagoSUNetwork.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		39691DAB2B348A3500347303 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				39615E632B334EB100F86E09 /* PagoOnboardingView.swift */,
+				39691DB02B348B8100347303 /* PagoOnboardingViewRefactory.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		39691DAC2B348A4100347303 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				393931132B344FDE0015B434 /* PagoOnboardingRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		39691DAD2B348A7B00347303 /* UIModel */ = {
+			isa = PBXGroup;
+			children = (
+				3964F51C2B331BB600C9907C /* PagoContentUIModel.swift */,
+			);
+			path = UIModel;
+			sourceTree = "<group>";
+		};
+		39691DAE2B348A8300347303 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				3964F5372B333DE600C9907C /* PagoContentRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		39691DAF2B348A9000347303 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3964F4C12B33068100C9907C /* PagoContentView.swift */,
+				39691DA12B34868D00347303 /* PagoContentViewRefactory.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3964F4BB2B33068100C9907C /* PagoSwiftUIMVSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3964F4CA2B33068200C9907C /* Build configuration list for PBXNativeTarget "PagoSwiftUIMVSample" */;
+			buildPhases = (
+				3964F4B82B33068100C9907C /* Sources */,
+				3964F4B92B33068100C9907C /* Frameworks */,
+				3964F4BA2B33068100C9907C /* Resources */,
+				3964F5142B33138500C9907C /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PagoSwiftUIMVSample;
+			productName = PagoSwiftUIMVSample;
+			productReference = 3964F4BC2B33068100C9907C /* PagoSwiftUIMVSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3964F4B42B33068100C9907C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					3964F4BB2B33068100C9907C = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 3964F4B72B33068100C9907C /* Build configuration list for PBXProject "PagoSwiftUIMVSample" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3964F4B32B33068100C9907C;
+			productRefGroup = 3964F4BD2B33068100C9907C /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3964F4F92B33116A00C9907C /* Products */;
+					ProjectRef = 3964F4F82B33116A00C9907C /* PagoApiClient.xcodeproj */;
+				},
+				{
+					ProductGroup = 3964F4EF2B33116000C9907C /* Products */;
+					ProjectRef = 3964F4EE2B33116000C9907C /* PagoCoreSDK.xcodeproj */;
+				},
+				{
+					ProductGroup = 3964F5022B33117200C9907C /* Products */;
+					ProjectRef = 3964F5012B33117200C9907C /* PagoUI.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				3964F4BB2B33068100C9907C /* PagoSwiftUIMVSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3964F4F52B33116000C9907C /* PagoCoreSDK.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = PagoCoreSDK.framework;
+			remoteRef = 3964F4F42B33116000C9907C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3964F4F72B33116000C9907C /* PagoCoreSDKTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = PagoCoreSDKTests.xctest;
+			remoteRef = 3964F4F62B33116000C9907C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3964F4FE2B33116A00C9907C /* PagoApiClient.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = PagoApiClient.framework;
+			remoteRef = 3964F4FD2B33116A00C9907C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3964F5002B33116A00C9907C /* PagoApiClientTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = PagoApiClientTests.xctest;
+			remoteRef = 3964F4FF2B33116A00C9907C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3964F5092B33117200C9907C /* PagoUISDK.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = PagoUISDK.framework;
+			remoteRef = 3964F5082B33117200C9907C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3964F50B2B33117200C9907C /* PagoUITests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = PagoUITests.xctest;
+			remoteRef = 3964F50A2B33117200C9907C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3964F4BA2B33068100C9907C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3964F4C72B33068200C9907C /* Preview Assets.xcassets in Resources */,
+				3964F4C42B33068200C9907C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3964F4B82B33068100C9907C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				393931112B344D360015B434 /* PagoOnboardingResponseData.swift in Sources */,
+				3939310F2B3442D70015B434 /* PagoOnboardingPageUIModel.swift in Sources */,
+				3964F4C22B33068100C9907C /* PagoContentView.swift in Sources */,
+				3964F4C02B33068100C9907C /* PagoSwiftUIMVSampleApp.swift in Sources */,
+				3964F5322B33345200C9907C /* PagoSUApiClientManager.swift in Sources */,
+				39615E642B334EB100F86E09 /* PagoOnboardingView.swift in Sources */,
+				39691DB12B348B8100347303 /* PagoOnboardingViewRefactory.swift in Sources */,
+				3964F5362B333B4500C9907C /* PagoContentResponseData.swift in Sources */,
+				393931042B34429B0015B434 /* PagoOnboardingUIModel.swift in Sources */,
+				3964F5342B33346300C9907C /* PagoSUNetwork.swift in Sources */,
+				39691DA22B34868E00347303 /* PagoContentViewRefactory.swift in Sources */,
+				3964F5382B333DE600C9907C /* PagoContentRepository.swift in Sources */,
+				3964F4ED2B330E5800C9907C /* PagoMockModelData.swift in Sources */,
+				393931142B344FDE0015B434 /* PagoOnboardingRepository.swift in Sources */,
+				3964F51D2B331BB600C9907C /* PagoContentUIModel.swift in Sources */,
+				3964F4EB2B33086600C9907C /* PagoModelData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3964F4C82B33068200C9907C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3964F4C92B33068200C9907C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3964F4CB2B33068200C9907C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PagoSwiftUIMVSample/Preview Content\"";
+				DEVELOPMENT_TEAM = 75CZ89WK87;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.cosminiulian.PagoSwiftUIMVSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3964F4CC2B33068200C9907C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PagoSwiftUIMVSample/Preview Content\"";
+				DEVELOPMENT_TEAM = 75CZ89WK87;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.cosminiulian.PagoSwiftUIMVSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3964F4B72B33068100C9907C /* Build configuration list for PBXProject "PagoSwiftUIMVSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3964F4C82B33068200C9907C /* Debug */,
+				3964F4C92B33068200C9907C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3964F4CA2B33068200C9907C /* Build configuration list for PBXNativeTarget "PagoSwiftUIMVSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3964F4CB2B33068200C9907C /* Debug */,
+				3964F4CC2B33068200C9907C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3964F4B42B33068100C9907C /* Project object */;
+}

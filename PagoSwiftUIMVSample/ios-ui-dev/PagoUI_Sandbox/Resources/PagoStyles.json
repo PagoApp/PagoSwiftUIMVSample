@@ -1,0 +1,443 @@
+{
+    "theme": {
+        "baseUrl": "https://pago.ro/assets/sdk/",
+        "integratorPrefix": "bt/",
+        "dateFormat": "dd.MM.yyyy",
+        "shortDateFormat": "dd.MM",
+        "primaryBackgroundColor": {
+            "colorHex": "#FCFCFC"
+        },
+        "secondaryBackgroundColor": {
+            "colorHex": "#FFFFFF"
+        },
+        "tertiaryBackground": {
+            "colorHex": "#F3F3F3"
+        },
+        "iconsColor": {
+            "colorHex": "#666666"
+        },
+        "selectedIconsColor": {
+            "colorHex": "#036FD3"
+        },
+        "backButtonColor": {
+            "colorHex": "#222222"
+        },
+        "xBtnColor": {
+            "colorHex": "#222222"
+        },
+        "searchBarIconColor": {
+            "colorHex": "#666666"
+        },
+        "searchBarHintColor": {
+            "colorHex": "#666666"
+        },
+        "searchBarTextColor": {
+            "colorHex": "#222222"
+        },
+        "highlightedOfferColor": {
+            "colorHex": "#F3F3F3"
+        },
+        "offersCellShadow": {
+            "offset": 2,
+            "blur": 10
+        },
+        "generalArrowsColor": {
+            "colorHex": "#222222"
+        },
+        "generalDividerColor": {
+            "colorHex": "#FFFFFF"
+        },
+        "tabSelectedLineColor": {
+            "colorHex": "#F3F3F3"
+        },
+        "tabUnselectedLineColor": {
+            "colorHex": "#FBC400"
+        }
+    },
+    "labelStyles": {
+        "greyRegular12": {
+            "textSize": 12,
+            "textColor": {
+                "colorHex": "#666666"
+            },
+            "fontStyle": "regular"
+        },
+        "greyRegular14": {
+            "textSize": 14,
+            "textColor": {
+                "colorHex": "#666666"
+            },
+            "fontStyle": "regular"
+        },
+        "greyBold14": {
+            "textColor": {
+                "colorHex": "#666666"
+            },
+            "textSize": 14,
+            "fontStyle": "bold"
+        },
+        "blackBold14": {
+            "textColor": {
+                "colorHex": "#222222"
+            },
+            "textSize": 14,
+            "fontStyle": "bold"
+        },
+        "blackRegular14": {
+            "textSize": 14,
+            "textColor": {
+                "colorHex": "#222222"
+            },
+            "fontStyle": "regular"
+        },
+        "redRegular12": {
+            "textColor": {
+                "colorHex": "#E0132B"
+            },
+            "textSize": 12,
+            "fontStyle": "regular"
+        },
+        "redRegular14": {
+            "textColor": {
+                "colorHex": "#E0132B"
+            },
+            "textSize": 14,
+            "fontStyle": "regular"
+        },
+        "brownRegular14": {
+            "textColor": {
+                "colorHex": "#614C00"
+            },
+            "textSize": 14,
+            "fontStyle": "regular"
+        },
+        "blackBold16": {
+            "textSize": 16,
+            "textColor": {
+                "colorHex": "#222222"
+            },
+            "fontStyle": "bold"
+        },
+        "blackRegular16": {
+            "textSize": 16,
+            "textColor": {
+                "colorHex": "#222222"
+            },
+            "fontStyle": "regular"
+        },
+        "greyRegular16": {
+            "textSize": 16,
+            "textColor": {
+                "colorHex": "#666666"
+            },
+            "fontStyle": "regular"
+        },
+        "blackBold20": {
+            "textSize": 20,
+            "textColor": {
+                "colorHex": "#222222"
+            },
+            "fontStyle": "bold"
+        }
+    },
+    "incompleteLabel": {
+        "incompleteState": {
+            "textStyle": "brownRegular14",
+            "backgroundColor": {
+                "colorSolidHex": "#FFECA9"
+            },
+            "cornerRadius": 40,
+            "border": {
+                "color": {
+                    "colorHex": null
+                },
+                "width": 0
+            }
+        },
+        "editableState": {
+            "textStyle": "blackRegular14",
+            "backgroundColor": {
+                "colorSolidHex": "#FFFFFF"
+            },
+            "cornerRadius": 40,
+            "border": {
+                "color": {
+                    "colorHex": "#666666"
+                },
+                "width": 1
+            }
+        },
+        "warningState": {
+            "textStyle": "redRegular14",
+            "backgroundColor": {
+                "colorSolidHex": "#FCE7EA"
+            },
+            "cornerRadius": 40,
+            "border": {
+                "color": {
+                    "colorHex": null
+                },
+                "width": 0
+            }
+        },
+        "normalState": {
+            "textStyle": "blackRegular14",
+            "backgroundColor": {
+                "colorSolidHex": "#F3F3F3"
+            },
+            "cornerRadius": 40,
+            "border": {
+                "color": {
+                    "colorHex": null
+                },
+                "width": 0
+            }
+        }
+    },
+    "input": {
+        "isTopHintUppercase": false,
+        "hintsStyle": "greyRegular12",
+        "inputStyle": "blackRegular16",
+        "errorStyle": "redRegular12",
+        "iconColor": {
+            "colorHex": "#614C00"
+        },
+        "iconBackgroundColor": {
+            "colorSolidHex": "#FFECA9"
+        },
+        "iconBackgroundCornerRadius": 8,
+        "backgroundColor": {
+            "colorSolidHex": "#FFFFFF"
+        },
+        "cornerRadius": 12,
+        "underlineColor": {
+            "colorHex": "#666666"
+        },
+        "underlineFocusColor": {
+            "colorHex": "#FBC400"
+        },
+        "underlineErrorColor": {
+            "colorHex": "#E0132B"
+        },
+        "border": {
+            "color": {
+                "colorHex": null
+            },
+            "width": 0
+        },
+        "shadow": {
+            "offset": 2,
+            "blur": 10
+        }
+    },
+    "buttons": {
+        "marginHorizontal": 24,
+        "primaryButton": {
+            "cornerRadius": 8,
+            "shadow": {
+                "offset": 0,
+                "blur": 0
+            },
+            "textColor": {
+                "colorHex": "#222222"
+            },
+            "backgroundColor": {
+                "colorSolidHex": "#FBC400"
+            }
+        },
+        "primarySmallButton": {
+            "shadow": {
+                "offset": 0,
+                "blur": 0
+            },
+            "cornerRadius": 8,
+            "textColor": {
+                "colorHex": "#614C00"
+            },
+            "backgroundColor": {
+                "colorSolidHex": "#FFECA9"
+            }
+        },
+        "secondaryButton": {
+            "cornerRadius": 8,
+            "shadow": {
+                "offset": 0,
+                "blur": 0
+            },
+            "textColor": {
+                "colorHex": "#FFECA9"
+            },
+            "backgroundColor": {
+                "colorSolidHex": "#00FFFFFF"
+            }
+        },
+        "tertiaryButton": {
+            "shadow": {
+                "offset": 0,
+                "blur": 0
+            },
+            "cornerRadius": 8,
+            "textColor": {
+                "colorHex": "#036FD3"
+            },
+            "backgroundColor": {
+                "colorSolidHex": "#00FFFFFF"
+            }
+        },
+        "tertiaryDeactivatedButton": {
+            "shadow": {
+                "offset": 0,
+                "blur": 0
+            },
+            "cornerRadius": 8,
+            "textColor": {
+                "colorHex": "#666666"
+            },
+            "backgroundColor": {
+                "colorSolidHex": "#00FFFFFF"
+            }
+        },
+        "deactivatedButton": {
+            "shadow": {
+                "offset": 0,
+                "blur": 0
+            },
+            "cornerRadius": 8,
+            "textColor": {
+                "colorHex": "#666666"
+            },
+            "backgroundColor": {
+                "colorSolidHex": "#E5E5E5"
+            }
+        },
+        "warningButton": {
+            "shadow": {
+                "offset": 0,
+                "blur": 0
+            },
+            "cornerRadius": 8,
+            "textColor": {
+                "colorHex": "#FFFFFF"
+            },
+            "backgroundColor": {
+                "colorSolidHex": "#E0132B"
+            }
+        },
+        "warningSmallButton": {
+            "shadow": {
+                "offset": 0,
+                "blur": 0
+            },
+            "cornerRadius": 8,
+            "textColor": {
+                "colorHex": "#E0132B"
+            },
+            "backgroundColor": {
+                "colorSolidHex": "#FCE7EA"
+            }
+        }
+    },
+    "selector": {
+        "filledLabelStyle": "blackRegular16",
+        "titleLabelStyle": "greyRegular14",
+        "hintLabelStyle": "greyRegular16",
+        "errorLabelStyle": "redRegular14",
+        "iconColor": {
+            "colorHex": "#666666"
+        },
+        "backgroundColor": {
+            "colorSolidHex": "#FFFFFF"
+        },
+        "cornerRadius": 10,
+        "shadow": {
+            "offset": 2,
+            "blur": 10
+        }
+    },
+    "switch": {
+        "secondaryUncheckedColor": {
+            "colorHex": "#B0B0B0"
+        },
+        "secondaryCheckedColor": {
+            "colorHex": "#FFECA9"
+        },
+        "primaryUncheckedColor": {
+            "colorHex": "#ECECEC"
+        },
+        "primaryCheckedColor": {
+            "colorHex": "#FBC400"
+        },
+        "textLabelStyle": "blackRegular14"
+    },
+    "stepCard": {
+        "titleTextStyle": "blackBold16",
+        "bodyTextStyle": "greyRegular14",
+        "stepTextStyle": "blackBold16",
+        "backgroundColor": {
+            "colorSolidHex": "#FFFFFF"
+        },
+        "cornerRadius": 10,
+        "shadow": {
+            "offset": 2,
+            "blur": 10
+        },
+        "numberBackgroundColor": {
+            "colorSolidHex": "#F3F3F3"
+        }
+    },
+    "talon": {
+        "talonBackgroundColor": {
+            "colorHex": "#FFECA9"
+        },
+        "talonLeftColor": {
+            "colorHex": "#F9FCF8"
+        },
+        "talonRightColor": {
+            "colorHex": "#FEFEF4"
+        },
+        "highlightColor": {
+            "colorHex": "#FBC400"
+        },
+        "nextButton": {
+            "cornerRadius": 0,
+            "shadow": {
+                "offset": 0,
+                "blur": 0
+            },
+            "textColor": {
+                "colorHex": "#222222"
+            },
+            "backgroundColor": {
+                "colorSolidHex": "#FBC400"
+            }
+        },
+        "prevButton": {
+            "cornerRadius": 0,
+            "shadow": {
+                "offset": 0,
+                "blur": 0
+            },
+            "textColor": {
+                "colorHex": "#222222"
+            },
+            "backgroundColor": {
+                "colorSolidHex": "#E3B203"
+            }
+        },
+        "disabledButton": {
+            "cornerRadius": 0,
+            "shadow": {
+                "offset": 0,
+                "blur": 0
+            },
+            "textColor": {
+                "colorHex": "#222222"
+            },
+            "backgroundColor": {
+                "colorSolidHex": "#E5E5E5"
+            }
+        },
+        "hintLabelStyle": "greyRegular16",
+        "filledLabelStyle": "blackRegular16"
+    }
+}

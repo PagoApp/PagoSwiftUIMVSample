@@ -1,0 +1,1079 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		067BDB1C2AF2F49600E8512F /* PagoMenusPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067BDB132AF2F49600E8512F /* PagoMenusPresenter.swift */; };
+		067BDB1D2AF2F49600E8512F /* PagoMenusService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067BDB142AF2F49600E8512F /* PagoMenusService.swift */; };
+		067BDB1E2AF2F49600E8512F /* PagoMenusCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067BDB152AF2F49600E8512F /* PagoMenusCoordinator.swift */; };
+		067BDB1F2AF2F49600E8512F /* PagoMenusRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067BDB172AF2F49600E8512F /* PagoMenusRepository.swift */; };
+		067BDB202AF2F49600E8512F /* PagoMenusPredicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067BDB182AF2F49600E8512F /* PagoMenusPredicate.swift */; };
+		067BDB212AF2F49600E8512F /* PagoMenusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067BDB192AF2F49600E8512F /* PagoMenusModel.swift */; };
+		067BDB222AF2F49600E8512F /* PagoMenusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067BDB1B2AF2F49600E8512F /* PagoMenusViewController.swift */; };
+		067CB63E2B0CE15F0003A929 /* PagoLoadedImagesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067CB6352B0CE15F0003A929 /* PagoLoadedImagesService.swift */; };
+		067CB63F2B0CE15F0003A929 /* PagoLoadedImagesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067CB6362B0CE15F0003A929 /* PagoLoadedImagesPresenter.swift */; };
+		067CB6402B0CE15F0003A929 /* PagoLoadedImagesPredicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067CB6382B0CE15F0003A929 /* PagoLoadedImagesPredicate.swift */; };
+		067CB6412B0CE15F0003A929 /* PagoLoadedImagesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067CB6392B0CE15F0003A929 /* PagoLoadedImagesModel.swift */; };
+		067CB6422B0CE15F0003A929 /* PagoLoadedImagesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067CB63A2B0CE15F0003A929 /* PagoLoadedImagesRepository.swift */; };
+		067CB6432B0CE15F0003A929 /* PagoLoadedImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067CB63C2B0CE15F0003A929 /* PagoLoadedImagesViewController.swift */; };
+		067CB6442B0CE15F0003A929 /* PagoLoadedImagesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067CB63D2B0CE15F0003A929 /* PagoLoadedImagesCoordinator.swift */; };
+		067CB64E2B0CE4F80003A929 /* PagoStackedInfosPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067CB6492B0CE4F80003A929 /* PagoStackedInfosPresenter.swift */; };
+		067CB64F2B0CE4F80003A929 /* PagoStackedInfosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067CB64B2B0CE4F80003A929 /* PagoStackedInfosModel.swift */; };
+		067CB6502B0CE4F80003A929 /* PagoStackedInfosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067CB64D2B0CE4F80003A929 /* PagoStackedInfosView.swift */; };
+		067CB65E2B0CE54F0003A929 /* PagoCustomComponentPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067CB6552B0CE54F0003A929 /* PagoCustomComponentPresenter.swift */; };
+		067CB65F2B0CE54F0003A929 /* PagoCustomComponentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067CB6562B0CE54F0003A929 /* PagoCustomComponentService.swift */; };
+		067CB6602B0CE54F0003A929 /* PagoCustomComponentCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067CB6572B0CE54F0003A929 /* PagoCustomComponentCoordinator.swift */; };
+		067CB6612B0CE54F0003A929 /* PagoCustomComponentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067CB6592B0CE54F0003A929 /* PagoCustomComponentModel.swift */; };
+		067CB6622B0CE54F0003A929 /* PagoCustomComponentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067CB65A2B0CE54F0003A929 /* PagoCustomComponentRepository.swift */; };
+		067CB6632B0CE54F0003A929 /* PagoCustomComponentPredicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067CB65B2B0CE54F0003A929 /* PagoCustomComponentPredicate.swift */; };
+		067CB6642B0CE54F0003A929 /* PagoCustomComponentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067CB65D2B0CE54F0003A929 /* PagoCustomComponentViewController.swift */; };
+		067CB6722B0CEA8E0003A929 /* PagoPageControllersCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067CB6682B0CEA8E0003A929 /* PagoPageControllersCoordinator.swift */; };
+		067CB6732B0CEA8E0003A929 /* PagoPageControllersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067CB66A2B0CEA8E0003A929 /* PagoPageControllersService.swift */; };
+		067CB6742B0CEA8E0003A929 /* PagoPageControllersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067CB66B2B0CEA8E0003A929 /* PagoPageControllersPresenter.swift */; };
+		067CB6752B0CEA8E0003A929 /* PagoPageControllersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067CB66D2B0CEA8E0003A929 /* PagoPageControllersModel.swift */; };
+		067CB6762B0CEA8E0003A929 /* PagoPageControllersPredicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067CB66E2B0CEA8E0003A929 /* PagoPageControllersPredicate.swift */; };
+		067CB6772B0CEA8E0003A929 /* PagoPageControllersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067CB66F2B0CEA8E0003A929 /* PagoPageControllersRepository.swift */; };
+		067CB6782B0CEA8E0003A929 /* PagoPageControllersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067CB6712B0CEA8E0003A929 /* PagoPageControllersViewController.swift */; };
+		068FFA232B0525090008EE7A /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 068FFA222B0525090008EE7A /* Lottie */; };
+		068FFA262B0525160008EE7A /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 068FFA252B0525160008EE7A /* SDWebImage */; };
+		068FFA292B0525990008EE7A /* PagoBillsSDKLottieWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068FFA272B0525990008EE7A /* PagoBillsSDKLottieWrapper.swift */; };
+		068FFA2A2B0525990008EE7A /* PagoBillsSDKSDWebImageWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068FFA282B0525990008EE7A /* PagoBillsSDKSDWebImageWrapper.swift */; };
+		D4C77262867CA138551C8B13 /* DataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C77ED79CCD683A60BEF863 /* DataRepository.swift */; };
+		D4C774FD80DD770A3019A770 /* DataRepository+Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C7770E9D075BC35DAADB05 /* DataRepository+Components.swift */; };
+		D4C777D712F265C21E1B67FA /* DataRepository+Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C776A5371E98A9A29A4511 /* DataRepository+Buttons.swift */; };
+		E8C35D1A296721FD005A1184 /* ComponentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C35D19296721FD005A1184 /* ComponentTableViewCell.swift */; };
+		E8C3AE4629BE177700FB65E1 /* PagoUISDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8C3AE4529BE177700FB65E1 /* PagoUISDK.framework */; };
+		E8C3AE4C29BE179800FB65E1 /* IntegratorConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C3AE4A29BE179800FB65E1 /* IntegratorConfig.swift */; };
+		E8C3AE4D29BE179800FB65E1 /* PagoJSONConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C3AE4B29BE179800FB65E1 /* PagoJSONConfig.swift */; };
+		E8C3AE4F29BE17BC00FB65E1 /* IntegratorError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C3AE4E29BE17BC00FB65E1 /* IntegratorError.swift */; };
+		E8E7224829BEF6FD00343D11 /* PagoStyles.json in Resources */ = {isa = PBXBuildFile; fileRef = E8E7224729BEF6FD00343D11 /* PagoStyles.json */; };
+		E8E7225829C0C9EB00343D11 /* PagoButtonsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E7224F29C0C9EB00343D11 /* PagoButtonsService.swift */; };
+		E8E7225929C0C9EB00343D11 /* PagoButtonsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E7225029C0C9EB00343D11 /* PagoButtonsPresenter.swift */; };
+		E8E7225A29C0C9EB00343D11 /* PagoButtonsPredicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E7225229C0C9EB00343D11 /* PagoButtonsPredicate.swift */; };
+		E8E7225B29C0C9EB00343D11 /* PagoButtonsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E7225329C0C9EB00343D11 /* PagoButtonsModel.swift */; };
+		E8E7225C29C0C9EB00343D11 /* PagoButtonsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E7225429C0C9EB00343D11 /* PagoButtonsRepository.swift */; };
+		E8E7225D29C0C9EB00343D11 /* PagoButtonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E7225629C0C9EB00343D11 /* PagoButtonsViewController.swift */; };
+		E8E7225E29C0C9EB00343D11 /* PagoButtonsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E7225729C0C9EB00343D11 /* PagoButtonsCoordinator.swift */; };
+		E8F48FCF2963253600F85354 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F48FCE2963253600F85354 /* AppDelegate.swift */; };
+		E8F48FD12963253600F85354 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F48FD02963253600F85354 /* SceneDelegate.swift */; };
+		E8F48FD32963253600F85354 /* ComponentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F48FD22963253600F85354 /* ComponentsViewController.swift */; };
+		E8F48FD62963253600F85354 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8F48FD42963253600F85354 /* Main.storyboard */; };
+		E8F48FD92963253600F85354 /* PagoUI_Sandbox.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E8F48FD72963253600F85354 /* PagoUI_Sandbox.xcdatamodeld */; };
+		E8F48FDB2963253700F85354 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8F48FDA2963253700F85354 /* Assets.xcassets */; };
+		E8F48FDE2963253700F85354 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8F48FDC2963253700F85354 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E8F48FE52963253700F85354 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8F48FC32963253600F85354 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8F48FCA2963253600F85354;
+			remoteInfo = PagoUI_Sandbox;
+		};
+		E8F48FEF2963253700F85354 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8F48FC32963253600F85354 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8F48FCA2963253600F85354;
+			remoteInfo = PagoUI_Sandbox;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		067BDB132AF2F49600E8512F /* PagoMenusPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoMenusPresenter.swift; sourceTree = "<group>"; };
+		067BDB142AF2F49600E8512F /* PagoMenusService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoMenusService.swift; sourceTree = "<group>"; };
+		067BDB152AF2F49600E8512F /* PagoMenusCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoMenusCoordinator.swift; sourceTree = "<group>"; };
+		067BDB172AF2F49600E8512F /* PagoMenusRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoMenusRepository.swift; sourceTree = "<group>"; };
+		067BDB182AF2F49600E8512F /* PagoMenusPredicate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoMenusPredicate.swift; sourceTree = "<group>"; };
+		067BDB192AF2F49600E8512F /* PagoMenusModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoMenusModel.swift; sourceTree = "<group>"; };
+		067BDB1B2AF2F49600E8512F /* PagoMenusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoMenusViewController.swift; sourceTree = "<group>"; };
+		067CB6352B0CE15F0003A929 /* PagoLoadedImagesService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoLoadedImagesService.swift; sourceTree = "<group>"; };
+		067CB6362B0CE15F0003A929 /* PagoLoadedImagesPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoLoadedImagesPresenter.swift; sourceTree = "<group>"; };
+		067CB6382B0CE15F0003A929 /* PagoLoadedImagesPredicate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoLoadedImagesPredicate.swift; sourceTree = "<group>"; };
+		067CB6392B0CE15F0003A929 /* PagoLoadedImagesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoLoadedImagesModel.swift; sourceTree = "<group>"; };
+		067CB63A2B0CE15F0003A929 /* PagoLoadedImagesRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoLoadedImagesRepository.swift; sourceTree = "<group>"; };
+		067CB63C2B0CE15F0003A929 /* PagoLoadedImagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoLoadedImagesViewController.swift; sourceTree = "<group>"; };
+		067CB63D2B0CE15F0003A929 /* PagoLoadedImagesCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoLoadedImagesCoordinator.swift; sourceTree = "<group>"; };
+		067CB6492B0CE4F80003A929 /* PagoStackedInfosPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoStackedInfosPresenter.swift; sourceTree = "<group>"; };
+		067CB64B2B0CE4F80003A929 /* PagoStackedInfosModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoStackedInfosModel.swift; sourceTree = "<group>"; };
+		067CB64D2B0CE4F80003A929 /* PagoStackedInfosView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoStackedInfosView.swift; sourceTree = "<group>"; };
+		067CB6552B0CE54F0003A929 /* PagoCustomComponentPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoCustomComponentPresenter.swift; sourceTree = "<group>"; };
+		067CB6562B0CE54F0003A929 /* PagoCustomComponentService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoCustomComponentService.swift; sourceTree = "<group>"; };
+		067CB6572B0CE54F0003A929 /* PagoCustomComponentCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoCustomComponentCoordinator.swift; sourceTree = "<group>"; };
+		067CB6592B0CE54F0003A929 /* PagoCustomComponentModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoCustomComponentModel.swift; sourceTree = "<group>"; };
+		067CB65A2B0CE54F0003A929 /* PagoCustomComponentRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoCustomComponentRepository.swift; sourceTree = "<group>"; };
+		067CB65B2B0CE54F0003A929 /* PagoCustomComponentPredicate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoCustomComponentPredicate.swift; sourceTree = "<group>"; };
+		067CB65D2B0CE54F0003A929 /* PagoCustomComponentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoCustomComponentViewController.swift; sourceTree = "<group>"; };
+		067CB6682B0CEA8E0003A929 /* PagoPageControllersCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoPageControllersCoordinator.swift; sourceTree = "<group>"; };
+		067CB66A2B0CEA8E0003A929 /* PagoPageControllersService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoPageControllersService.swift; sourceTree = "<group>"; };
+		067CB66B2B0CEA8E0003A929 /* PagoPageControllersPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoPageControllersPresenter.swift; sourceTree = "<group>"; };
+		067CB66D2B0CEA8E0003A929 /* PagoPageControllersModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoPageControllersModel.swift; sourceTree = "<group>"; };
+		067CB66E2B0CEA8E0003A929 /* PagoPageControllersPredicate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoPageControllersPredicate.swift; sourceTree = "<group>"; };
+		067CB66F2B0CEA8E0003A929 /* PagoPageControllersRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoPageControllersRepository.swift; sourceTree = "<group>"; };
+		067CB6712B0CEA8E0003A929 /* PagoPageControllersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoPageControllersViewController.swift; sourceTree = "<group>"; };
+		068FFA272B0525990008EE7A /* PagoBillsSDKLottieWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoBillsSDKLottieWrapper.swift; sourceTree = "<group>"; };
+		068FFA282B0525990008EE7A /* PagoBillsSDKSDWebImageWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoBillsSDKSDWebImageWrapper.swift; sourceTree = "<group>"; };
+		06D5C4CA29D5CDA900DE02DF /* Lottie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Lottie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		06D5C4CE29D5CDAE00DE02DF /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4C776A5371E98A9A29A4511 /* DataRepository+Buttons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DataRepository+Buttons.swift"; sourceTree = "<group>"; };
+		D4C7770E9D075BC35DAADB05 /* DataRepository+Components.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DataRepository+Components.swift"; sourceTree = "<group>"; };
+		D4C77ED79CCD683A60BEF863 /* DataRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataRepository.swift; sourceTree = "<group>"; };
+		E8C35D19296721FD005A1184 /* ComponentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentTableViewCell.swift; sourceTree = "<group>"; };
+		E8C3AE4529BE177700FB65E1 /* PagoUISDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PagoUISDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8C3AE4A29BE179800FB65E1 /* IntegratorConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntegratorConfig.swift; sourceTree = "<group>"; };
+		E8C3AE4B29BE179800FB65E1 /* PagoJSONConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoJSONConfig.swift; sourceTree = "<group>"; };
+		E8C3AE4E29BE17BC00FB65E1 /* IntegratorError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntegratorError.swift; sourceTree = "<group>"; };
+		E8E7224729BEF6FD00343D11 /* PagoStyles.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PagoStyles.json; sourceTree = "<group>"; };
+		E8E7224F29C0C9EB00343D11 /* PagoButtonsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoButtonsService.swift; sourceTree = "<group>"; };
+		E8E7225029C0C9EB00343D11 /* PagoButtonsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoButtonsPresenter.swift; sourceTree = "<group>"; };
+		E8E7225229C0C9EB00343D11 /* PagoButtonsPredicate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoButtonsPredicate.swift; sourceTree = "<group>"; };
+		E8E7225329C0C9EB00343D11 /* PagoButtonsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoButtonsModel.swift; sourceTree = "<group>"; };
+		E8E7225429C0C9EB00343D11 /* PagoButtonsRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoButtonsRepository.swift; sourceTree = "<group>"; };
+		E8E7225629C0C9EB00343D11 /* PagoButtonsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoButtonsViewController.swift; sourceTree = "<group>"; };
+		E8E7225729C0C9EB00343D11 /* PagoButtonsCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoButtonsCoordinator.swift; sourceTree = "<group>"; };
+		E8F48FCB2963253600F85354 /* PagoUI_Sandbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PagoUI_Sandbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8F48FCE2963253600F85354 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E8F48FD02963253600F85354 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E8F48FD22963253600F85354 /* ComponentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentsViewController.swift; sourceTree = "<group>"; };
+		E8F48FD52963253600F85354 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E8F48FD82963253600F85354 /* PagoUI_Sandbox.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PagoUI_Sandbox.xcdatamodel; sourceTree = "<group>"; };
+		E8F48FDA2963253700F85354 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E8F48FDD2963253700F85354 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E8F48FDF2963253700F85354 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8F48FE42963253700F85354 /* PagoUI_SandboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PagoUI_SandboxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8F48FEE2963253700F85354 /* PagoUI_SandboxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PagoUI_SandboxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E8F48FC82963253600F85354 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8C3AE4629BE177700FB65E1 /* PagoUISDK.framework in Frameworks */,
+				068FFA232B0525090008EE7A /* Lottie in Frameworks */,
+				068FFA262B0525160008EE7A /* SDWebImage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8F48FE12963253700F85354 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8F48FEB2963253700F85354 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		067BDB112AF2F49600E8512F /* PagoMenus */ = {
+			isa = PBXGroup;
+			children = (
+				067BDB122AF2F49600E8512F /* Presenter */,
+				067BDB152AF2F49600E8512F /* PagoMenusCoordinator.swift */,
+				067BDB162AF2F49600E8512F /* Model */,
+				067BDB1A2AF2F49600E8512F /* View */,
+			);
+			path = PagoMenus;
+			sourceTree = "<group>";
+		};
+		067BDB122AF2F49600E8512F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				067BDB132AF2F49600E8512F /* PagoMenusPresenter.swift */,
+				067BDB142AF2F49600E8512F /* PagoMenusService.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		067BDB162AF2F49600E8512F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				067BDB172AF2F49600E8512F /* PagoMenusRepository.swift */,
+				067BDB182AF2F49600E8512F /* PagoMenusPredicate.swift */,
+				067BDB192AF2F49600E8512F /* PagoMenusModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		067BDB1A2AF2F49600E8512F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				067BDB1B2AF2F49600E8512F /* PagoMenusViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		067CB6332B0CE15F0003A929 /* PagoLoadedImages */ = {
+			isa = PBXGroup;
+			children = (
+				067CB6342B0CE15F0003A929 /* Presenter */,
+				067CB6372B0CE15F0003A929 /* Model */,
+				067CB63B2B0CE15F0003A929 /* View */,
+				067CB63D2B0CE15F0003A929 /* PagoLoadedImagesCoordinator.swift */,
+			);
+			path = PagoLoadedImages;
+			sourceTree = "<group>";
+		};
+		067CB6342B0CE15F0003A929 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				067CB6352B0CE15F0003A929 /* PagoLoadedImagesService.swift */,
+				067CB6362B0CE15F0003A929 /* PagoLoadedImagesPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		067CB6372B0CE15F0003A929 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				067CB6382B0CE15F0003A929 /* PagoLoadedImagesPredicate.swift */,
+				067CB6392B0CE15F0003A929 /* PagoLoadedImagesModel.swift */,
+				067CB63A2B0CE15F0003A929 /* PagoLoadedImagesRepository.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		067CB63B2B0CE15F0003A929 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				067CB63C2B0CE15F0003A929 /* PagoLoadedImagesViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		067CB6472B0CE4F80003A929 /* PagoStackedInfos */ = {
+			isa = PBXGroup;
+			children = (
+				067CB6482B0CE4F80003A929 /* Presenter */,
+				067CB64A2B0CE4F80003A929 /* Model */,
+				067CB64C2B0CE4F80003A929 /* View */,
+			);
+			path = PagoStackedInfos;
+			sourceTree = "<group>";
+		};
+		067CB6482B0CE4F80003A929 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				067CB6492B0CE4F80003A929 /* PagoStackedInfosPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		067CB64A2B0CE4F80003A929 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				067CB64B2B0CE4F80003A929 /* PagoStackedInfosModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		067CB64C2B0CE4F80003A929 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				067CB64D2B0CE4F80003A929 /* PagoStackedInfosView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		067CB6532B0CE54F0003A929 /* PagoCustomComponent */ = {
+			isa = PBXGroup;
+			children = (
+				067CB6472B0CE4F80003A929 /* PagoStackedInfos */,
+				067CB6542B0CE54F0003A929 /* Presenter */,
+				067CB6572B0CE54F0003A929 /* PagoCustomComponentCoordinator.swift */,
+				067CB6582B0CE54F0003A929 /* Model */,
+				067CB65C2B0CE54F0003A929 /* View */,
+			);
+			path = PagoCustomComponent;
+			sourceTree = "<group>";
+		};
+		067CB6542B0CE54F0003A929 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				067CB6552B0CE54F0003A929 /* PagoCustomComponentPresenter.swift */,
+				067CB6562B0CE54F0003A929 /* PagoCustomComponentService.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		067CB6582B0CE54F0003A929 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				067CB6592B0CE54F0003A929 /* PagoCustomComponentModel.swift */,
+				067CB65A2B0CE54F0003A929 /* PagoCustomComponentRepository.swift */,
+				067CB65B2B0CE54F0003A929 /* PagoCustomComponentPredicate.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		067CB65C2B0CE54F0003A929 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				067CB65D2B0CE54F0003A929 /* PagoCustomComponentViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		067CB6672B0CEA8E0003A929 /* PagoPageControllers */ = {
+			isa = PBXGroup;
+			children = (
+				067CB6682B0CEA8E0003A929 /* PagoPageControllersCoordinator.swift */,
+				067CB6692B0CEA8E0003A929 /* Presenter */,
+				067CB66C2B0CEA8E0003A929 /* Model */,
+				067CB6702B0CEA8E0003A929 /* View */,
+			);
+			path = PagoPageControllers;
+			sourceTree = "<group>";
+		};
+		067CB6692B0CEA8E0003A929 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				067CB66A2B0CEA8E0003A929 /* PagoPageControllersService.swift */,
+				067CB66B2B0CEA8E0003A929 /* PagoPageControllersPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		067CB66C2B0CEA8E0003A929 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				067CB66D2B0CEA8E0003A929 /* PagoPageControllersModel.swift */,
+				067CB66E2B0CEA8E0003A929 /* PagoPageControllersPredicate.swift */,
+				067CB66F2B0CEA8E0003A929 /* PagoPageControllersRepository.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		067CB6702B0CEA8E0003A929 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				067CB6712B0CEA8E0003A929 /* PagoPageControllersViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D4C77114F909443E2CD67EF7 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				D4C77ED79CCD683A60BEF863 /* DataRepository.swift */,
+				D4C7770E9D075BC35DAADB05 /* DataRepository+Components.swift */,
+				D4C776A5371E98A9A29A4511 /* DataRepository+Buttons.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		E8C3AE4429BE177700FB65E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06D5C4CE29D5CDAE00DE02DF /* SDWebImage.framework */,
+				06D5C4CA29D5CDA900DE02DF /* Lottie.framework */,
+				E8C3AE4529BE177700FB65E1 /* PagoUISDK.framework */,
+			);
+			name = Frameworks;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		E8C3AE4929BE179800FB65E1 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				E8C3AE4A29BE179800FB65E1 /* IntegratorConfig.swift */,
+				E8C3AE4B29BE179800FB65E1 /* PagoJSONConfig.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		E8E7224629BEF6BF00343D11 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E8E7224729BEF6FD00343D11 /* PagoStyles.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E8E7224929C092F900343D11 /* ComponentsView */ = {
+			isa = PBXGroup;
+			children = (
+				E8C35D19296721FD005A1184 /* ComponentTableViewCell.swift */,
+				E8F48FD22963253600F85354 /* ComponentsViewController.swift */,
+			);
+			path = ComponentsView;
+			sourceTree = "<group>";
+		};
+		E8E7224D29C0C9EB00343D11 /* PagoButtons */ = {
+			isa = PBXGroup;
+			children = (
+				E8E7225129C0C9EB00343D11 /* Model */,
+				E8E7225729C0C9EB00343D11 /* PagoButtonsCoordinator.swift */,
+				E8E7224E29C0C9EB00343D11 /* Presenter */,
+				E8E7225529C0C9EB00343D11 /* View */,
+			);
+			path = PagoButtons;
+			sourceTree = "<group>";
+		};
+		E8E7224E29C0C9EB00343D11 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E8E7224F29C0C9EB00343D11 /* PagoButtonsService.swift */,
+				E8E7225029C0C9EB00343D11 /* PagoButtonsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E8E7225129C0C9EB00343D11 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E8E7225229C0C9EB00343D11 /* PagoButtonsPredicate.swift */,
+				E8E7225329C0C9EB00343D11 /* PagoButtonsModel.swift */,
+				E8E7225429C0C9EB00343D11 /* PagoButtonsRepository.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E8E7225529C0C9EB00343D11 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E8E7225629C0C9EB00343D11 /* PagoButtonsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E8F48FC22963253600F85354 = {
+			isa = PBXGroup;
+			children = (
+				E8F48FCD2963253600F85354 /* PagoUI_Sandbox */,
+				E8F48FCC2963253600F85354 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E8F48FCC2963253600F85354 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E8F48FCB2963253600F85354 /* PagoUI_Sandbox.app */,
+				E8F48FE42963253700F85354 /* PagoUI_SandboxTests.xctest */,
+				E8F48FEE2963253700F85354 /* PagoUI_SandboxUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E8F48FCD2963253600F85354 /* PagoUI_Sandbox */ = {
+			isa = PBXGroup;
+			children = (
+				068FFA272B0525990008EE7A /* PagoBillsSDKLottieWrapper.swift */,
+				068FFA282B0525990008EE7A /* PagoBillsSDKSDWebImageWrapper.swift */,
+				E8F48FCE2963253600F85354 /* AppDelegate.swift */,
+				E8F48FD02963253600F85354 /* SceneDelegate.swift */,
+				E8C3AE4E29BE17BC00FB65E1 /* IntegratorError.swift */,
+				E8E7224929C092F900343D11 /* ComponentsView */,
+				E8C3AE4929BE179800FB65E1 /* Configurator */,
+				067CB6672B0CEA8E0003A929 /* PagoPageControllers */,
+				067CB6532B0CE54F0003A929 /* PagoCustomComponent */,
+				067CB6332B0CE15F0003A929 /* PagoLoadedImages */,
+				067BDB112AF2F49600E8512F /* PagoMenus */,
+				E8E7224D29C0C9EB00343D11 /* PagoButtons */,
+				D4C77114F909443E2CD67EF7 /* Repository */,
+				E8E7224629BEF6BF00343D11 /* Resources */,
+				E8F48FD72963253600F85354 /* PagoUI_Sandbox.xcdatamodeld */,
+				E8F48FD42963253600F85354 /* Main.storyboard */,
+				E8F48FDC2963253700F85354 /* LaunchScreen.storyboard */,
+				E8F48FDA2963253700F85354 /* Assets.xcassets */,
+				E8F48FDF2963253700F85354 /* Info.plist */,
+				E8C3AE4429BE177700FB65E1 /* Frameworks */,
+			);
+			path = PagoUI_Sandbox;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E8F48FCA2963253600F85354 /* PagoUI_Sandbox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8F48FF82963253700F85354 /* Build configuration list for PBXNativeTarget "PagoUI_Sandbox" */;
+			buildPhases = (
+				E8F48FC72963253600F85354 /* Sources */,
+				E8F48FC82963253600F85354 /* Frameworks */,
+				E8F48FC92963253600F85354 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PagoUI_Sandbox;
+			packageProductDependencies = (
+				068FFA222B0525090008EE7A /* Lottie */,
+				068FFA252B0525160008EE7A /* SDWebImage */,
+			);
+			productName = PagoUI_Sandbox;
+			productReference = E8F48FCB2963253600F85354 /* PagoUI_Sandbox.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E8F48FE32963253700F85354 /* PagoUI_SandboxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8F48FFB2963253700F85354 /* Build configuration list for PBXNativeTarget "PagoUI_SandboxTests" */;
+			buildPhases = (
+				E8F48FE02963253700F85354 /* Sources */,
+				E8F48FE12963253700F85354 /* Frameworks */,
+				E8F48FE22963253700F85354 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8F48FE62963253700F85354 /* PBXTargetDependency */,
+			);
+			name = PagoUI_SandboxTests;
+			packageProductDependencies = (
+			);
+			productName = PagoUI_SandboxTests;
+			productReference = E8F48FE42963253700F85354 /* PagoUI_SandboxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E8F48FED2963253700F85354 /* PagoUI_SandboxUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8F48FFE2963253700F85354 /* Build configuration list for PBXNativeTarget "PagoUI_SandboxUITests" */;
+			buildPhases = (
+				E8F48FEA2963253700F85354 /* Sources */,
+				E8F48FEB2963253700F85354 /* Frameworks */,
+				E8F48FEC2963253700F85354 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8F48FF02963253700F85354 /* PBXTargetDependency */,
+			);
+			name = PagoUI_SandboxUITests;
+			productName = PagoUI_SandboxUITests;
+			productReference = E8F48FEE2963253700F85354 /* PagoUI_SandboxUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E8F48FC32963253600F85354 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					E8F48FCA2963253600F85354 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					E8F48FE32963253700F85354 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = E8F48FCA2963253600F85354;
+					};
+					E8F48FED2963253700F85354 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = E8F48FCA2963253600F85354;
+					};
+				};
+			};
+			buildConfigurationList = E8F48FC62963253600F85354 /* Build configuration list for PBXProject "PagoUI_Sandbox" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E8F48FC22963253600F85354;
+			packageReferences = (
+				068FFA212B0525090008EE7A /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				068FFA242B0525160008EE7A /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
+			productRefGroup = E8F48FCC2963253600F85354 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E8F48FCA2963253600F85354 /* PagoUI_Sandbox */,
+				E8F48FE32963253700F85354 /* PagoUI_SandboxTests */,
+				E8F48FED2963253700F85354 /* PagoUI_SandboxUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E8F48FC92963253600F85354 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8F48FDE2963253700F85354 /* LaunchScreen.storyboard in Resources */,
+				E8F48FDB2963253700F85354 /* Assets.xcassets in Resources */,
+				E8F48FD62963253600F85354 /* Main.storyboard in Resources */,
+				E8E7224829BEF6FD00343D11 /* PagoStyles.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8F48FE22963253700F85354 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8F48FEC2963253700F85354 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E8F48FC72963253600F85354 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8F48FD32963253600F85354 /* ComponentsViewController.swift in Sources */,
+				E8E7225929C0C9EB00343D11 /* PagoButtonsPresenter.swift in Sources */,
+				067CB6422B0CE15F0003A929 /* PagoLoadedImagesRepository.swift in Sources */,
+				067CB6432B0CE15F0003A929 /* PagoLoadedImagesViewController.swift in Sources */,
+				067CB6612B0CE54F0003A929 /* PagoCustomComponentModel.swift in Sources */,
+				067CB6752B0CEA8E0003A929 /* PagoPageControllersModel.swift in Sources */,
+				067BDB202AF2F49600E8512F /* PagoMenusPredicate.swift in Sources */,
+				067CB6772B0CEA8E0003A929 /* PagoPageControllersRepository.swift in Sources */,
+				067CB6722B0CEA8E0003A929 /* PagoPageControllersCoordinator.swift in Sources */,
+				E8E7225A29C0C9EB00343D11 /* PagoButtonsPredicate.swift in Sources */,
+				067CB6622B0CE54F0003A929 /* PagoCustomComponentRepository.swift in Sources */,
+				E8C35D1A296721FD005A1184 /* ComponentTableViewCell.swift in Sources */,
+				067CB6762B0CEA8E0003A929 /* PagoPageControllersPredicate.swift in Sources */,
+				067CB65F2B0CE54F0003A929 /* PagoCustomComponentService.swift in Sources */,
+				067CB6642B0CE54F0003A929 /* PagoCustomComponentViewController.swift in Sources */,
+				068FFA292B0525990008EE7A /* PagoBillsSDKLottieWrapper.swift in Sources */,
+				067CB6742B0CEA8E0003A929 /* PagoPageControllersPresenter.swift in Sources */,
+				E8E7225829C0C9EB00343D11 /* PagoButtonsService.swift in Sources */,
+				067CB6502B0CE4F80003A929 /* PagoStackedInfosView.swift in Sources */,
+				067CB63E2B0CE15F0003A929 /* PagoLoadedImagesService.swift in Sources */,
+				067BDB1F2AF2F49600E8512F /* PagoMenusRepository.swift in Sources */,
+				E8C3AE4C29BE179800FB65E1 /* IntegratorConfig.swift in Sources */,
+				067CB6732B0CEA8E0003A929 /* PagoPageControllersService.swift in Sources */,
+				E8F48FCF2963253600F85354 /* AppDelegate.swift in Sources */,
+				E8F48FD92963253600F85354 /* PagoUI_Sandbox.xcdatamodeld in Sources */,
+				E8C3AE4F29BE17BC00FB65E1 /* IntegratorError.swift in Sources */,
+				067CB65E2B0CE54F0003A929 /* PagoCustomComponentPresenter.swift in Sources */,
+				067CB6412B0CE15F0003A929 /* PagoLoadedImagesModel.swift in Sources */,
+				067CB6632B0CE54F0003A929 /* PagoCustomComponentPredicate.swift in Sources */,
+				E8E7225E29C0C9EB00343D11 /* PagoButtonsCoordinator.swift in Sources */,
+				E8C3AE4D29BE179800FB65E1 /* PagoJSONConfig.swift in Sources */,
+				067CB6782B0CEA8E0003A929 /* PagoPageControllersViewController.swift in Sources */,
+				067CB64E2B0CE4F80003A929 /* PagoStackedInfosPresenter.swift in Sources */,
+				E8F48FD12963253600F85354 /* SceneDelegate.swift in Sources */,
+				067BDB1C2AF2F49600E8512F /* PagoMenusPresenter.swift in Sources */,
+				067BDB212AF2F49600E8512F /* PagoMenusModel.swift in Sources */,
+				D4C77262867CA138551C8B13 /* DataRepository.swift in Sources */,
+				E8E7225C29C0C9EB00343D11 /* PagoButtonsRepository.swift in Sources */,
+				067BDB222AF2F49600E8512F /* PagoMenusViewController.swift in Sources */,
+				068FFA2A2B0525990008EE7A /* PagoBillsSDKSDWebImageWrapper.swift in Sources */,
+				E8E7225D29C0C9EB00343D11 /* PagoButtonsViewController.swift in Sources */,
+				067CB6402B0CE15F0003A929 /* PagoLoadedImagesPredicate.swift in Sources */,
+				067CB64F2B0CE4F80003A929 /* PagoStackedInfosModel.swift in Sources */,
+				067CB6602B0CE54F0003A929 /* PagoCustomComponentCoordinator.swift in Sources */,
+				067CB63F2B0CE15F0003A929 /* PagoLoadedImagesPresenter.swift in Sources */,
+				E8E7225B29C0C9EB00343D11 /* PagoButtonsModel.swift in Sources */,
+				067BDB1D2AF2F49600E8512F /* PagoMenusService.swift in Sources */,
+				067BDB1E2AF2F49600E8512F /* PagoMenusCoordinator.swift in Sources */,
+				D4C774FD80DD770A3019A770 /* DataRepository+Components.swift in Sources */,
+				067CB6442B0CE15F0003A929 /* PagoLoadedImagesCoordinator.swift in Sources */,
+				D4C777D712F265C21E1B67FA /* DataRepository+Buttons.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8F48FE02963253700F85354 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8F48FEA2963253700F85354 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E8F48FE62963253700F85354 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8F48FCA2963253600F85354 /* PagoUI_Sandbox */;
+			targetProxy = E8F48FE52963253700F85354 /* PBXContainerItemProxy */;
+		};
+		E8F48FF02963253700F85354 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8F48FCA2963253600F85354 /* PagoUI_Sandbox */;
+			targetProxy = E8F48FEF2963253700F85354 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E8F48FD42963253600F85354 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8F48FD52963253600F85354 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E8F48FDC2963253700F85354 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8F48FDD2963253700F85354 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E8F48FF62963253700F85354 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E8F48FF72963253700F85354 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E8F48FF92963253700F85354 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5Y55C9D76Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PagoUI_Sandbox/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Pago UI";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.timesafe.sdk.ui;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E8F48FFA2963253700F85354 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5Y55C9D76Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PagoUI_Sandbox/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Pago UI";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.timesafe.sdk.ui;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E8F48FFC2963253700F85354 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5Y55C9D76Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.timesafe.PagoUI-SandboxTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PagoUI_Sandbox.app/PagoUI_Sandbox";
+			};
+			name = Debug;
+		};
+		E8F48FFD2963253700F85354 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5Y55C9D76Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.timesafe.PagoUI-SandboxTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PagoUI_Sandbox.app/PagoUI_Sandbox";
+			};
+			name = Release;
+		};
+		E8F48FFF2963253700F85354 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5Y55C9D76Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.timesafe.PagoUI-SandboxUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PagoUI_Sandbox;
+			};
+			name = Debug;
+		};
+		E8F490002963253700F85354 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5Y55C9D76Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.timesafe.PagoUI-SandboxUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PagoUI_Sandbox;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E8F48FC62963253600F85354 /* Build configuration list for PBXProject "PagoUI_Sandbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8F48FF62963253700F85354 /* Debug */,
+				E8F48FF72963253700F85354 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8F48FF82963253700F85354 /* Build configuration list for PBXNativeTarget "PagoUI_Sandbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8F48FF92963253700F85354 /* Debug */,
+				E8F48FFA2963253700F85354 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8F48FFB2963253700F85354 /* Build configuration list for PBXNativeTarget "PagoUI_SandboxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8F48FFC2963253700F85354 /* Debug */,
+				E8F48FFD2963253700F85354 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8F48FFE2963253700F85354 /* Build configuration list for PBXNativeTarget "PagoUI_SandboxUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8F48FFF2963253700F85354 /* Debug */,
+				E8F490002963253700F85354 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		068FFA212B0525090008EE7A /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.3.3;
+			};
+		};
+		068FFA242B0525160008EE7A /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.18.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		068FFA222B0525090008EE7A /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 068FFA212B0525090008EE7A /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		068FFA252B0525160008EE7A /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 068FFA242B0525160008EE7A /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		E8F48FD72963253600F85354 /* PagoUI_Sandbox.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E8F48FD82963253600F85354 /* PagoUI_Sandbox.xcdatamodel */,
+			);
+			currentVersion = E8F48FD82963253600F85354 /* PagoUI_Sandbox.xcdatamodel */;
+			path = PagoUI_Sandbox.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E8F48FC32963253600F85354 /* Project object */;
+}

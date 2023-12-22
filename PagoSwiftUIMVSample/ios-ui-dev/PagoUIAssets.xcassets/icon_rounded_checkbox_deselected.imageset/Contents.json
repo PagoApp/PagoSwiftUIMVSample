@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "icon_rounded_checkbox_deselected.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

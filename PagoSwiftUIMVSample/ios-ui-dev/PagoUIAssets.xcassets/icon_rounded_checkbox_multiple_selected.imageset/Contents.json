@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "icon_rounded_checkbox_multiple_selected.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -1,0 +1,52 @@
+pipeline {
+    agent { label 'mac-mini-slave' }
+
+    environment {
+        LC_ALL = 'en_US.UTF-8'
+        APP_NAME = 'PagoApiClient'
+        BUILD_NAME = 'PagoApiClient'
+        APP_TARGET = 'PagoApiClient'
+        APP_PROJECT = 'PagoApiClient.xcodeproj'
+        APP_WORKSPACE = 'PagoApiClient.xcworkspace'
+        APP_TEST_SCHEME = 'PagoApliClient'
+        PUBLISH_TO_CHANNEL = 'slack'
+    }
+
+    stages {
+        stage('Unit Test cases') {
+            steps {
+                script {
+                    try {
+                        sh "fastlane tests"
+                    } catch(exc) {
+                        unstable('There are failed tests.' + exc)
+                    }
+                }
+            }
+
+        }
+        
+        stage('Build artefact') {
+            when {
+                branch 'master'
+            }
+            steps {
+                script {
+                    try {
+                        sh "fastlane run run_tests"
+                    } catch(exc) {
+                        currentBuild.result = "UNSTABLE"
+                        error('There are failed tests.')
+                    }
+                }
+            }
+        }
+    }
+}
+
+void setBuildStatus(String message, String state) {
+  step([
+      $class: "GitHubCommitStatusSetter",
+      statusResultSource: [ $class: "ConditionalStatusResultSource", results: [[$class: "AnyBuildResult", message: message, state: state]] ]
+  ]);
+}

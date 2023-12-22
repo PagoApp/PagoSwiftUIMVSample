@@ -1,0 +1,8 @@
+[submodule "ios-core-dev"]
+	path = ios-core-dev
+	url = git@github.com:PagoApp/ios-core-dev.git
+	branch = main
+	update = merge # <-- this is what you need to add
+[submodule "ios-network-release"]
+	path = ios-network-release
+	url = git@github.com:PagoSDK/ios-network-release.git

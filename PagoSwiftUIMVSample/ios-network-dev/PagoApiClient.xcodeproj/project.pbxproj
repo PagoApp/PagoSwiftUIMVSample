@@ -1,0 +1,807 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		064B5CF028B379AF0041A5B0 /* PagoAlamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064B5CEF28B379AF0041A5B0 /* PagoAlamofire.swift */; };
+		06845E1D2881E62300B4C528 /* PagoSyncronizedPriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06845E1C2881E62300B4C528 /* PagoSyncronizedPriorityQueue.swift */; };
+		068E632A28620F7D0000F398 /* PagoCoreSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 068E632928620F7D0000F398 /* PagoCoreSDK.framework */; };
+		06B0A7962858CFE50001C701 /* Webservice+CommonParsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B0A7952858CFE50001C701 /* Webservice+CommonParsers.swift */; };
+		06F61BEE28B3703F007376E2 /* PagoTaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F61BDD28B3703F007376E2 /* PagoTaskDelegate.swift */; };
+		06F61BEF28B3703F007376E2 /* PagoMultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F61BDE28B3703F007376E2 /* PagoMultipartFormData.swift */; };
+		06F61BF028B3703F007376E2 /* PagoNetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F61BDF28B3703F007376E2 /* PagoNetworkReachabilityManager.swift */; };
+		06F61BF128B3703F007376E2 /* PagoTimeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F61BE028B3703F007376E2 /* PagoTimeline.swift */; };
+		06F61BF228B3703F007376E2 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F61BE128B3703F007376E2 /* DispatchQueue+Alamofire.swift */; };
+		06F61BF328B3703F007376E2 /* PagoApiClientResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F61BE228B3703F007376E2 /* PagoApiClientResult.swift */; };
+		06F61BF428B3703F007376E2 /* PagoParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F61BE328B3703F007376E2 /* PagoParameterEncoding.swift */; };
+		06F61BF528B3703F007376E2 /* PagoAFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F61BE428B3703F007376E2 /* PagoAFError.swift */; };
+		06F61BF628B3703F007376E2 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F61BE528B3703F007376E2 /* Validation.swift */; };
+		06F61BF728B3703F007376E2 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F61BE628B3703F007376E2 /* Notifications.swift */; };
+		06F61BF828B3703F007376E2 /* PagoApiClientResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F61BE728B3703F007376E2 /* PagoApiClientResponse.swift */; };
+		06F61BFA28B3703F007376E2 /* PagoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F61BE928B3703F007376E2 /* PagoRequest.swift */; };
+		06F61BFB28B3703F007376E2 /* PagoSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F61BEA28B3703F007376E2 /* PagoSessionManager.swift */; };
+		06F61BFC28B3703F007376E2 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F61BEB28B3703F007376E2 /* ResponseSerialization.swift */; };
+		06F61BFD28B3703F007376E2 /* PagoServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F61BEC28B3703F007376E2 /* PagoServerTrustPolicy.swift */; };
+		06F61BFE28B3703F007376E2 /* PagoSessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F61BED28B3703F007376E2 /* PagoSessionDelegate.swift */; };
+		43F617902AC58F8E00102E4C /* PagoSlim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F6178C2AC58F8E00102E4C /* PagoSlim.swift */; };
+		43F617912AC58F8E00102E4C /* PagoSlimLogglyConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F6178D2AC58F8E00102E4C /* PagoSlimLogglyConfig.swift */; };
+		43F617922AC58F8E00102E4C /* PagoSlimLogglyDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F6178E2AC58F8E00102E4C /* PagoSlimLogglyDestination.swift */; };
+		43F617932AC58F8E00102E4C /* PagoSlimConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F6178F2AC58F8E00102E4C /* PagoSlimConfig.swift */; };
+		4EB03DDF284D47A100AC4C3C /* Jenkinsfile in Resources */ = {isa = PBXBuildFile; fileRef = 4EB03DD3284D47A100AC4C3C /* Jenkinsfile */; };
+		4EB03DE0284D47A100AC4C3C /* Gemfile in Resources */ = {isa = PBXBuildFile; fileRef = 4EB03DD4284D47A100AC4C3C /* Gemfile */; };
+		4EB03DE1284D47A100AC4C3C /* Gemfile.lock in Resources */ = {isa = PBXBuildFile; fileRef = 4EB03DD5284D47A100AC4C3C /* Gemfile.lock */; };
+		4EB03DE4284D47A100AC4C3C /* Pluginfile in Resources */ = {isa = PBXBuildFile; fileRef = 4EB03DDA284D47A100AC4C3C /* Pluginfile */; };
+		4EB03DE5284D47A100AC4C3C /* Appfile in Resources */ = {isa = PBXBuildFile; fileRef = 4EB03DDB284D47A100AC4C3C /* Appfile */; };
+		4EB03DE6284D47A100AC4C3C /* Fastfile in Resources */ = {isa = PBXBuildFile; fileRef = 4EB03DDC284D47A100AC4C3C /* Fastfile */; };
+		4EB03DE7284D47A100AC4C3C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4EB03DDD284D47A100AC4C3C /* README.md */; };
+		4EB03DEA284D537400AC4C3C /* build.sh in Resources */ = {isa = PBXBuildFile; fileRef = 4EB03DE9284D537400AC4C3C /* build.sh */; };
+		4EF786C4283E08A8007F65DA /* PagoApiClient.docc in Sources */ = {isa = PBXBuildFile; fileRef = 4EF786C3283E08A8007F65DA /* PagoApiClient.docc */; };
+		4EF786CA283E08A8007F65DA /* PagoApiClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EF786BF283E08A8007F65DA /* PagoApiClient.framework */; };
+		4EF786CF283E08A8007F65DA /* PagoApiClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF786CE283E08A8007F65DA /* PagoApiClientTests.swift */; };
+		4EF786D0283E08A8007F65DA /* PagoApiClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EF786C2283E08A8007F65DA /* PagoApiClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4EF7875B283E0920007F65DA /* PagoError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF7871C283E091F007F65DA /* PagoError.swift */; };
+		4EF7875C283E0920007F65DA /* PagoApiSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF7871D283E091F007F65DA /* PagoApiSwitcher.swift */; };
+		4EF7875D283E0920007F65DA /* PagoResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF7871E283E091F007F65DA /* PagoResource.swift */; };
+		4EF7875E283E0920007F65DA /* PagoHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF7871F283E091F007F65DA /* PagoHost.swift */; };
+		4EF7875F283E0920007F65DA /* PagoUrlFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF78720283E091F007F65DA /* PagoUrlFormat.swift */; };
+		4EF78762283E0920007F65DA /* PagoOauth2Handler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF78723283E091F007F65DA /* PagoOauth2Handler.swift */; };
+		4EF78764283E0920007F65DA /* PagoLanguaceCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF78725283E091F007F65DA /* PagoLanguaceCode.swift */; };
+		4EF78780283E0920007F65DA /* PagoCustomArrayEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF78742283E0920007F65DA /* PagoCustomArrayEncoding.swift */; };
+		4EF78781283E0920007F65DA /* PagoCustomURLEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF78743283E0920007F65DA /* PagoCustomURLEncoding.swift */; };
+		4EF78782283E0920007F65DA /* PagoEncodedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF78744283E0920007F65DA /* PagoEncodedData.swift */; };
+		4EF78783283E0920007F65DA /* PagoCustomJSONEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF78745283E0920007F65DA /* PagoCustomJSONEncoding.swift */; };
+		4EF78784283E0920007F65DA /* PagoCountryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF78746283E0920007F65DA /* PagoCountryManager.swift */; };
+		4EF78787283E0920007F65DA /* PagoDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF78749283E0920007F65DA /* PagoDownload.swift */; };
+		4EF7878B283E0920007F65DA /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF7874D283E0920007F65DA /* Data+Extensions.swift */; };
+		4EF7878C283E0920007F65DA /* Request+Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF7874E283E0920007F65DA /* Request+Strings.swift */; };
+		4EF7878F283E0920007F65DA /* public.pem in Resources */ = {isa = PBXBuildFile; fileRef = 4EF78751283E0920007F65DA /* public.pem */; };
+		4EF787DD283E0C9A007F65DA /* PagoWebservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF78794283E0C97007F65DA /* PagoWebservice.swift */; };
+		4EF787E6283E0C9A007F65DA /* PagoPaymentItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF7879D283E0C97007F65DA /* PagoPaymentItemType.swift */; };
+		4EF787E8283E0C9A007F65DA /* PagoApiClientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF7879F283E0C97007F65DA /* PagoApiClientManager.swift */; };
+		4EF787FD283E0C9A007F65DA /* PagoSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF787B4283E0C98007F65DA /* PagoSession.swift */; };
+		4EF78804283E0C9A007F65DA /* PagoDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF787BB283E0C98007F65DA /* PagoDTO.swift */; };
+		4EF7880A283E0C9A007F65DA /* PagoJWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF787C1283E0C99007F65DA /* PagoJWT.swift */; };
+		4EF7881A283E0C9A007F65DA /* PagoDTOConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF787D1283E0C99007F65DA /* PagoDTOConstants.swift */; };
+		4EF7881F283E0C9A007F65DA /* PagoDeviceTokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF787D6283E0C99007F65DA /* PagoDeviceTokenManager.swift */; };
+		4EFA71AD283E238400F0F448 /* PagoLogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFA71AC283E238400F0F448 /* PagoLogManager.swift */; };
+		4EFA71AF283FAABF00F0F448 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFA71AE283FAABF00F0F448 /* String+Extensions.swift */; };
+		4EFA71B3283FAC3D00F0F448 /* DateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFA71B2283FAC3D00F0F448 /* DateFormatter+Extensions.swift */; };
+		4EFA71B9283FADC600F0F448 /* NSNumber+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFA71B8283FADC600F0F448 /* NSNumber+Extensions.swift */; };
+		4EFA71BC283FB00200F0F448 /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFA71BB283FB00200F0F448 /* Collection+Extensions.swift */; };
+		4EFA71BE283FB05100F0F448 /* PagoSharedConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFA71BD283FB05100F0F448 /* PagoSharedConstants.swift */; };
+		4EFA71C82840B70A00F0F448 /* PagoBankErrorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFA71C72840B70A00F0F448 /* PagoBankErrorHelper.swift */; };
+		D912847A2B2B9FF30030DFBE /* PagoWebserviceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91284792B2B9FF30030DFBE /* PagoWebserviceTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4EF786CB283E08A8007F65DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4EF786B6283E08A8007F65DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4EF786BE283E08A8007F65DA;
+			remoteInfo = PagoApiClient;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		064B5CEF28B379AF0041A5B0 /* PagoAlamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoAlamofire.swift; sourceTree = "<group>"; };
+		06845E1C2881E62300B4C528 /* PagoSyncronizedPriorityQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoSyncronizedPriorityQueue.swift; sourceTree = "<group>"; };
+		068E632928620F7D0000F398 /* PagoCoreSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PagoCoreSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		06B0A7952858CFE50001C701 /* Webservice+CommonParsers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Webservice+CommonParsers.swift"; sourceTree = "<group>"; };
+		06F61BDD28B3703F007376E2 /* PagoTaskDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoTaskDelegate.swift; sourceTree = "<group>"; };
+		06F61BDE28B3703F007376E2 /* PagoMultipartFormData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoMultipartFormData.swift; sourceTree = "<group>"; };
+		06F61BDF28B3703F007376E2 /* PagoNetworkReachabilityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoNetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		06F61BE028B3703F007376E2 /* PagoTimeline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoTimeline.swift; sourceTree = "<group>"; };
+		06F61BE128B3703F007376E2 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		06F61BE228B3703F007376E2 /* PagoApiClientResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoApiClientResult.swift; sourceTree = "<group>"; };
+		06F61BE328B3703F007376E2 /* PagoParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoParameterEncoding.swift; sourceTree = "<group>"; };
+		06F61BE428B3703F007376E2 /* PagoAFError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoAFError.swift; sourceTree = "<group>"; };
+		06F61BE528B3703F007376E2 /* Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		06F61BE628B3703F007376E2 /* Notifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		06F61BE728B3703F007376E2 /* PagoApiClientResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoApiClientResponse.swift; sourceTree = "<group>"; };
+		06F61BE928B3703F007376E2 /* PagoRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoRequest.swift; sourceTree = "<group>"; };
+		06F61BEA28B3703F007376E2 /* PagoSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoSessionManager.swift; sourceTree = "<group>"; };
+		06F61BEB28B3703F007376E2 /* ResponseSerialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseSerialization.swift; sourceTree = "<group>"; };
+		06F61BEC28B3703F007376E2 /* PagoServerTrustPolicy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoServerTrustPolicy.swift; sourceTree = "<group>"; };
+		06F61BED28B3703F007376E2 /* PagoSessionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoSessionDelegate.swift; sourceTree = "<group>"; };
+		43F6178C2AC58F8E00102E4C /* PagoSlim.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoSlim.swift; sourceTree = "<group>"; };
+		43F6178D2AC58F8E00102E4C /* PagoSlimLogglyConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoSlimLogglyConfig.swift; sourceTree = "<group>"; };
+		43F6178E2AC58F8E00102E4C /* PagoSlimLogglyDestination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoSlimLogglyDestination.swift; sourceTree = "<group>"; };
+		43F6178F2AC58F8E00102E4C /* PagoSlimConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoSlimConfig.swift; sourceTree = "<group>"; };
+		4EB03DD3284D47A100AC4C3C /* Jenkinsfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Jenkinsfile; sourceTree = "<group>"; };
+		4EB03DD4284D47A100AC4C3C /* Gemfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
+		4EB03DD5284D47A100AC4C3C /* Gemfile.lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gemfile.lock; sourceTree = "<group>"; };
+		4EB03DDA284D47A100AC4C3C /* Pluginfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Pluginfile; sourceTree = "<group>"; };
+		4EB03DDB284D47A100AC4C3C /* Appfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Appfile; sourceTree = "<group>"; };
+		4EB03DDC284D47A100AC4C3C /* Fastfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Fastfile; sourceTree = "<group>"; };
+		4EB03DDD284D47A100AC4C3C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4EB03DE9284D537400AC4C3C /* build.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = build.sh; sourceTree = "<group>"; };
+		4EF786BF283E08A8007F65DA /* PagoApiClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PagoApiClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EF786C2283E08A8007F65DA /* PagoApiClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PagoApiClient.h; sourceTree = "<group>"; };
+		4EF786C3283E08A8007F65DA /* PagoApiClient.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = PagoApiClient.docc; sourceTree = "<group>"; };
+		4EF786C9283E08A8007F65DA /* PagoApiClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PagoApiClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EF786CE283E08A8007F65DA /* PagoApiClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagoApiClientTests.swift; sourceTree = "<group>"; };
+		4EF7871C283E091F007F65DA /* PagoError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoError.swift; sourceTree = "<group>"; };
+		4EF7871D283E091F007F65DA /* PagoApiSwitcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoApiSwitcher.swift; sourceTree = "<group>"; };
+		4EF7871E283E091F007F65DA /* PagoResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoResource.swift; sourceTree = "<group>"; };
+		4EF7871F283E091F007F65DA /* PagoHost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoHost.swift; sourceTree = "<group>"; };
+		4EF78720283E091F007F65DA /* PagoUrlFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoUrlFormat.swift; sourceTree = "<group>"; };
+		4EF78723283E091F007F65DA /* PagoOauth2Handler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoOauth2Handler.swift; sourceTree = "<group>"; };
+		4EF78725283E091F007F65DA /* PagoLanguaceCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoLanguaceCode.swift; sourceTree = "<group>"; };
+		4EF78742283E0920007F65DA /* PagoCustomArrayEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoCustomArrayEncoding.swift; sourceTree = "<group>"; };
+		4EF78743283E0920007F65DA /* PagoCustomURLEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoCustomURLEncoding.swift; sourceTree = "<group>"; };
+		4EF78744283E0920007F65DA /* PagoEncodedData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoEncodedData.swift; sourceTree = "<group>"; };
+		4EF78745283E0920007F65DA /* PagoCustomJSONEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoCustomJSONEncoding.swift; sourceTree = "<group>"; };
+		4EF78746283E0920007F65DA /* PagoCountryManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoCountryManager.swift; sourceTree = "<group>"; };
+		4EF78749283E0920007F65DA /* PagoDownload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoDownload.swift; sourceTree = "<group>"; };
+		4EF7874D283E0920007F65DA /* Data+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Extensions.swift"; sourceTree = "<group>"; };
+		4EF7874E283E0920007F65DA /* Request+Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Request+Strings.swift"; sourceTree = "<group>"; };
+		4EF78751283E0920007F65DA /* public.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = public.pem; sourceTree = "<group>"; };
+		4EF78794283E0C97007F65DA /* PagoWebservice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoWebservice.swift; sourceTree = "<group>"; };
+		4EF7879D283E0C97007F65DA /* PagoPaymentItemType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoPaymentItemType.swift; sourceTree = "<group>"; };
+		4EF7879F283E0C97007F65DA /* PagoApiClientManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoApiClientManager.swift; sourceTree = "<group>"; };
+		4EF787B4283E0C98007F65DA /* PagoSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoSession.swift; sourceTree = "<group>"; };
+		4EF787BB283E0C98007F65DA /* PagoDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoDTO.swift; sourceTree = "<group>"; };
+		4EF787C1283E0C99007F65DA /* PagoJWT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoJWT.swift; sourceTree = "<group>"; };
+		4EF787D1283E0C99007F65DA /* PagoDTOConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoDTOConstants.swift; sourceTree = "<group>"; };
+		4EF787D6283E0C99007F65DA /* PagoDeviceTokenManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoDeviceTokenManager.swift; sourceTree = "<group>"; };
+		4EFA71AC283E238400F0F448 /* PagoLogManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagoLogManager.swift; sourceTree = "<group>"; };
+		4EFA71AE283FAABF00F0F448 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		4EFA71B2283FAC3D00F0F448 /* DateFormatter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extensions.swift"; sourceTree = "<group>"; };
+		4EFA71B8283FADC600F0F448 /* NSNumber+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSNumber+Extensions.swift"; sourceTree = "<group>"; };
+		4EFA71BB283FB00200F0F448 /* Collection+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extensions.swift"; sourceTree = "<group>"; };
+		4EFA71BD283FB05100F0F448 /* PagoSharedConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagoSharedConstants.swift; sourceTree = "<group>"; };
+		4EFA71C72840B70A00F0F448 /* PagoBankErrorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagoBankErrorHelper.swift; sourceTree = "<group>"; };
+		D91284792B2B9FF30030DFBE /* PagoWebserviceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagoWebserviceTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4EF786BC283E08A8007F65DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				068E632A28620F7D0000F398 /* PagoCoreSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EF786C6283E08A8007F65DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EF786CA283E08A8007F65DA /* PagoApiClient.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		068E632828620F7D0000F398 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				068E632928620F7D0000F398 /* PagoCoreSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		06F61BDC28B3703F007376E2 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				06F61BDD28B3703F007376E2 /* PagoTaskDelegate.swift */,
+				06F61BDE28B3703F007376E2 /* PagoMultipartFormData.swift */,
+				06F61BDF28B3703F007376E2 /* PagoNetworkReachabilityManager.swift */,
+				06F61BE028B3703F007376E2 /* PagoTimeline.swift */,
+				06F61BE128B3703F007376E2 /* DispatchQueue+Alamofire.swift */,
+				06F61BE228B3703F007376E2 /* PagoApiClientResult.swift */,
+				06F61BE328B3703F007376E2 /* PagoParameterEncoding.swift */,
+				064B5CEF28B379AF0041A5B0 /* PagoAlamofire.swift */,
+				06F61BE428B3703F007376E2 /* PagoAFError.swift */,
+				06F61BE528B3703F007376E2 /* Validation.swift */,
+				06F61BE628B3703F007376E2 /* Notifications.swift */,
+				06F61BE728B3703F007376E2 /* PagoApiClientResponse.swift */,
+				06F61BE928B3703F007376E2 /* PagoRequest.swift */,
+				06F61BEA28B3703F007376E2 /* PagoSessionManager.swift */,
+				06F61BEB28B3703F007376E2 /* ResponseSerialization.swift */,
+				06F61BEC28B3703F007376E2 /* PagoServerTrustPolicy.swift */,
+				06F61BED28B3703F007376E2 /* PagoSessionDelegate.swift */,
+			);
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		43F6178B2AC58F8E00102E4C /* LogglyLogManager */ = {
+			isa = PBXGroup;
+			children = (
+				43F6178C2AC58F8E00102E4C /* PagoSlim.swift */,
+				43F6178D2AC58F8E00102E4C /* PagoSlimLogglyConfig.swift */,
+				43F6178E2AC58F8E00102E4C /* PagoSlimLogglyDestination.swift */,
+				43F6178F2AC58F8E00102E4C /* PagoSlimConfig.swift */,
+			);
+			path = LogglyLogManager;
+			sourceTree = "<group>";
+		};
+		4EB03DD6284D47A100AC4C3C /* fastlane */ = {
+			isa = PBXGroup;
+			children = (
+				4EB03DEB284DDE9300AC4C3C /* scripts */,
+				4EB03DDA284D47A100AC4C3C /* Pluginfile */,
+				4EB03DDB284D47A100AC4C3C /* Appfile */,
+				4EB03DDC284D47A100AC4C3C /* Fastfile */,
+				4EB03DDD284D47A100AC4C3C /* README.md */,
+			);
+			path = fastlane;
+			sourceTree = "<group>";
+		};
+		4EB03DEB284DDE9300AC4C3C /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				4EB03DE9284D537400AC4C3C /* build.sh */,
+			);
+			path = scripts;
+			sourceTree = "<group>";
+		};
+		4EF786B5283E08A8007F65DA = {
+			isa = PBXGroup;
+			children = (
+				4EB03DD6284D47A100AC4C3C /* fastlane */,
+				4EB03DD4284D47A100AC4C3C /* Gemfile */,
+				4EB03DD5284D47A100AC4C3C /* Gemfile.lock */,
+				4EB03DD3284D47A100AC4C3C /* Jenkinsfile */,
+				4EF786C1283E08A8007F65DA /* PagoApiClient */,
+				4EF786CD283E08A8007F65DA /* PagoApiClientTests */,
+				4EF786C0283E08A8007F65DA /* Products */,
+				068E632828620F7D0000F398 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4EF786C0283E08A8007F65DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4EF786BF283E08A8007F65DA /* PagoApiClient.framework */,
+				4EF786C9283E08A8007F65DA /* PagoApiClientTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4EF786C1283E08A8007F65DA /* PagoApiClient */ = {
+			isa = PBXGroup;
+			children = (
+				06F61BDC28B3703F007376E2 /* Alamofire */,
+				4EFA71BA283FADDC00F0F448 /* Extensions */,
+				06845E1C2881E62300B4C528 /* PagoSyncronizedPriorityQueue.swift */,
+				4EF7879F283E0C97007F65DA /* PagoApiClientManager.swift */,
+				4EF7871B283E091F007F65DA /* Core */,
+				4EF78746283E0920007F65DA /* PagoCountryManager.swift */,
+				4EF787D6283E0C99007F65DA /* PagoDeviceTokenManager.swift */,
+				4EF78749283E0920007F65DA /* PagoDownload.swift */,
+				4EF787BB283E0C98007F65DA /* PagoDTO.swift */,
+				4EF787D1283E0C99007F65DA /* PagoDTOConstants.swift */,
+				4EF78741283E0920007F65DA /* Encodings */,
+				4EF78725283E091F007F65DA /* PagoLanguaceCode.swift */,
+				4EF78723283E091F007F65DA /* PagoOauth2Handler.swift */,
+				4EF786C3283E08A8007F65DA /* PagoApiClient.docc */,
+				4EF786C2283E08A8007F65DA /* PagoApiClient.h */,
+				4EF787C1283E0C99007F65DA /* PagoJWT.swift */,
+				4EF787B4283E0C98007F65DA /* PagoSession.swift */,
+				4EF78752283E0920007F65DA /* Parsers */,
+				4EF7879D283E0C97007F65DA /* PagoPaymentItemType.swift */,
+				4EF78751283E0920007F65DA /* public.pem */,
+				4EF7874E283E0920007F65DA /* Request+Strings.swift */,
+				4EF78794283E0C97007F65DA /* PagoWebservice.swift */,
+				4EFA71AC283E238400F0F448 /* PagoLogManager.swift */,
+				43F6178B2AC58F8E00102E4C /* LogglyLogManager */,
+				4EFA71BD283FB05100F0F448 /* PagoSharedConstants.swift */,
+				4EFA71C72840B70A00F0F448 /* PagoBankErrorHelper.swift */,
+			);
+			path = PagoApiClient;
+			sourceTree = "<group>";
+		};
+		4EF786CD283E08A8007F65DA /* PagoApiClientTests */ = {
+			isa = PBXGroup;
+			children = (
+				4EF786CE283E08A8007F65DA /* PagoApiClientTests.swift */,
+				D91284792B2B9FF30030DFBE /* PagoWebserviceTests.swift */,
+			);
+			path = PagoApiClientTests;
+			sourceTree = "<group>";
+		};
+		4EF7871B283E091F007F65DA /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				4EF7871C283E091F007F65DA /* PagoError.swift */,
+				4EF7871D283E091F007F65DA /* PagoApiSwitcher.swift */,
+				4EF7871E283E091F007F65DA /* PagoResource.swift */,
+				4EF7871F283E091F007F65DA /* PagoHost.swift */,
+				4EF78720283E091F007F65DA /* PagoUrlFormat.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		4EF78741283E0920007F65DA /* Encodings */ = {
+			isa = PBXGroup;
+			children = (
+				4EF78742283E0920007F65DA /* PagoCustomArrayEncoding.swift */,
+				4EF78743283E0920007F65DA /* PagoCustomURLEncoding.swift */,
+				4EF78744283E0920007F65DA /* PagoEncodedData.swift */,
+				4EF78745283E0920007F65DA /* PagoCustomJSONEncoding.swift */,
+			);
+			path = Encodings;
+			sourceTree = "<group>";
+		};
+		4EF78752283E0920007F65DA /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				06B0A7952858CFE50001C701 /* Webservice+CommonParsers.swift */,
+			);
+			path = Parsers;
+			sourceTree = "<group>";
+		};
+		4EFA71BA283FADDC00F0F448 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4EF7874D283E0920007F65DA /* Data+Extensions.swift */,
+				4EFA71AE283FAABF00F0F448 /* String+Extensions.swift */,
+				4EFA71B2283FAC3D00F0F448 /* DateFormatter+Extensions.swift */,
+				4EFA71B8283FADC600F0F448 /* NSNumber+Extensions.swift */,
+				4EFA71BB283FB00200F0F448 /* Collection+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4EF786BA283E08A8007F65DA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EF786D0283E08A8007F65DA /* PagoApiClient.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4EF786BE283E08A8007F65DA /* PagoApiClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4EF786D3283E08A8007F65DA /* Build configuration list for PBXNativeTarget "PagoApiClient" */;
+			buildPhases = (
+				4EF786BA283E08A8007F65DA /* Headers */,
+				4EF786BB283E08A8007F65DA /* Sources */,
+				4EF786BC283E08A8007F65DA /* Frameworks */,
+				4EF786BD283E08A8007F65DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PagoApiClient;
+			packageProductDependencies = (
+			);
+			productName = PagoApiClient;
+			productReference = 4EF786BF283E08A8007F65DA /* PagoApiClient.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4EF786C8283E08A8007F65DA /* PagoApiClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4EF786D6283E08A8007F65DA /* Build configuration list for PBXNativeTarget "PagoApiClientTests" */;
+			buildPhases = (
+				4EF786C5283E08A8007F65DA /* Sources */,
+				4EF786C6283E08A8007F65DA /* Frameworks */,
+				4EF786C7283E08A8007F65DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4EF786CC283E08A8007F65DA /* PBXTargetDependency */,
+			);
+			name = PagoApiClientTests;
+			productName = PagoApiClientTests;
+			productReference = 4EF786C9283E08A8007F65DA /* PagoApiClientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4EF786B6283E08A8007F65DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					4EF786BE283E08A8007F65DA = {
+						CreatedOnToolsVersion = 13.4;
+					};
+					4EF786C8283E08A8007F65DA = {
+						CreatedOnToolsVersion = 13.4;
+					};
+				};
+			};
+			buildConfigurationList = 4EF786B9283E08A8007F65DA /* Build configuration list for PBXProject "PagoApiClient" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4EF786B5283E08A8007F65DA;
+			packageReferences = (
+			);
+			productRefGroup = 4EF786C0283E08A8007F65DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4EF786BE283E08A8007F65DA /* PagoApiClient */,
+				4EF786C8283E08A8007F65DA /* PagoApiClientTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4EF786BD283E08A8007F65DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EB03DE6284D47A100AC4C3C /* Fastfile in Resources */,
+				4EB03DE5284D47A100AC4C3C /* Appfile in Resources */,
+				4EB03DE7284D47A100AC4C3C /* README.md in Resources */,
+				4EB03DE1284D47A100AC4C3C /* Gemfile.lock in Resources */,
+				4EB03DE0284D47A100AC4C3C /* Gemfile in Resources */,
+				4EB03DE4284D47A100AC4C3C /* Pluginfile in Resources */,
+				4EF7878F283E0920007F65DA /* public.pem in Resources */,
+				4EB03DEA284D537400AC4C3C /* build.sh in Resources */,
+				4EB03DDF284D47A100AC4C3C /* Jenkinsfile in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EF786C7283E08A8007F65DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4EF786BB283E08A8007F65DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EFA71BC283FB00200F0F448 /* Collection+Extensions.swift in Sources */,
+				4EFA71AF283FAABF00F0F448 /* String+Extensions.swift in Sources */,
+				06F61BFA28B3703F007376E2 /* PagoRequest.swift in Sources */,
+				4EF78781283E0920007F65DA /* PagoCustomURLEncoding.swift in Sources */,
+				06B0A7962858CFE50001C701 /* Webservice+CommonParsers.swift in Sources */,
+				4EFA71B3283FAC3D00F0F448 /* DateFormatter+Extensions.swift in Sources */,
+				4EFA71B9283FADC600F0F448 /* NSNumber+Extensions.swift in Sources */,
+				4EF78782283E0920007F65DA /* PagoEncodedData.swift in Sources */,
+				06F61BFC28B3703F007376E2 /* ResponseSerialization.swift in Sources */,
+				4EF78764283E0920007F65DA /* PagoLanguaceCode.swift in Sources */,
+				4EF78783283E0920007F65DA /* PagoCustomJSONEncoding.swift in Sources */,
+				4EF7875D283E0920007F65DA /* PagoResource.swift in Sources */,
+				06F61BF228B3703F007376E2 /* DispatchQueue+Alamofire.swift in Sources */,
+				06F61BF628B3703F007376E2 /* Validation.swift in Sources */,
+				4EF78784283E0920007F65DA /* PagoCountryManager.swift in Sources */,
+				4EF7881A283E0C9A007F65DA /* PagoDTOConstants.swift in Sources */,
+				43F617932AC58F8E00102E4C /* PagoSlimConfig.swift in Sources */,
+				4EF78787283E0920007F65DA /* PagoDownload.swift in Sources */,
+				06F61BFD28B3703F007376E2 /* PagoServerTrustPolicy.swift in Sources */,
+				4EF7878B283E0920007F65DA /* Data+Extensions.swift in Sources */,
+				06F61BFE28B3703F007376E2 /* PagoSessionDelegate.swift in Sources */,
+				4EF78762283E0920007F65DA /* PagoOauth2Handler.swift in Sources */,
+				4EF78780283E0920007F65DA /* PagoCustomArrayEncoding.swift in Sources */,
+				4EF7875E283E0920007F65DA /* PagoHost.swift in Sources */,
+				4EF78804283E0C9A007F65DA /* PagoDTO.swift in Sources */,
+				4EFA71AD283E238400F0F448 /* PagoLogManager.swift in Sources */,
+				064B5CF028B379AF0041A5B0 /* PagoAlamofire.swift in Sources */,
+				4EF7875B283E0920007F65DA /* PagoError.swift in Sources */,
+				4EF787E6283E0C9A007F65DA /* PagoPaymentItemType.swift in Sources */,
+				4EF7875F283E0920007F65DA /* PagoUrlFormat.swift in Sources */,
+				4EF7878C283E0920007F65DA /* Request+Strings.swift in Sources */,
+				06845E1D2881E62300B4C528 /* PagoSyncronizedPriorityQueue.swift in Sources */,
+				06F61BF028B3703F007376E2 /* PagoNetworkReachabilityManager.swift in Sources */,
+				06F61BEF28B3703F007376E2 /* PagoMultipartFormData.swift in Sources */,
+				06F61BF128B3703F007376E2 /* PagoTimeline.swift in Sources */,
+				4EF787E8283E0C9A007F65DA /* PagoApiClientManager.swift in Sources */,
+				06F61BF428B3703F007376E2 /* PagoParameterEncoding.swift in Sources */,
+				06F61BFB28B3703F007376E2 /* PagoSessionManager.swift in Sources */,
+				06F61BF828B3703F007376E2 /* PagoApiClientResponse.swift in Sources */,
+				4EF786C4283E08A8007F65DA /* PagoApiClient.docc in Sources */,
+				06F61BF328B3703F007376E2 /* PagoApiClientResult.swift in Sources */,
+				43F617902AC58F8E00102E4C /* PagoSlim.swift in Sources */,
+				4EF7875C283E0920007F65DA /* PagoApiSwitcher.swift in Sources */,
+				06F61BF728B3703F007376E2 /* Notifications.swift in Sources */,
+				4EFA71C82840B70A00F0F448 /* PagoBankErrorHelper.swift in Sources */,
+				4EF7881F283E0C9A007F65DA /* PagoDeviceTokenManager.swift in Sources */,
+				06F61BF528B3703F007376E2 /* PagoAFError.swift in Sources */,
+				4EFA71BE283FB05100F0F448 /* PagoSharedConstants.swift in Sources */,
+				4EF787FD283E0C9A007F65DA /* PagoSession.swift in Sources */,
+				06F61BEE28B3703F007376E2 /* PagoTaskDelegate.swift in Sources */,
+				43F617922AC58F8E00102E4C /* PagoSlimLogglyDestination.swift in Sources */,
+				4EF787DD283E0C9A007F65DA /* PagoWebservice.swift in Sources */,
+				43F617912AC58F8E00102E4C /* PagoSlimLogglyConfig.swift in Sources */,
+				4EF7880A283E0C9A007F65DA /* PagoJWT.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EF786C5283E08A8007F65DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EF786CF283E08A8007F65DA /* PagoApiClientTests.swift in Sources */,
+				D912847A2B2B9FF30030DFBE /* PagoWebserviceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4EF786CC283E08A8007F65DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4EF786BE283E08A8007F65DA /* PagoApiClient */;
+			targetProxy = 4EF786CB283E08A8007F65DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4EF786D1283E08A8007F65DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 2;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4EF786D2283E08A8007F65DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 2;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4EF786D4283E08A8007F65DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.2.8;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 5Y55C9D76Q;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 2;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2.8;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.timesafe..PagoApiClient;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4EF786D5283E08A8007F65DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.2.8;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 5Y55C9D76Q;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 2;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2.8;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.timesafe..PagoApiClient;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4EF786D7283E08A8007F65DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 9A9C6QCF26;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ro.macrobyte.PagoApiClientTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4EF786D8283E08A8007F65DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 9A9C6QCF26;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ro.macrobyte.PagoApiClientTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4EF786B9283E08A8007F65DA /* Build configuration list for PBXProject "PagoApiClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EF786D1283E08A8007F65DA /* Debug */,
+				4EF786D2283E08A8007F65DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4EF786D3283E08A8007F65DA /* Build configuration list for PBXNativeTarget "PagoApiClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EF786D4283E08A8007F65DA /* Debug */,
+				4EF786D5283E08A8007F65DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4EF786D6283E08A8007F65DA /* Build configuration list for PBXNativeTarget "PagoApiClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EF786D7283E08A8007F65DA /* Debug */,
+				4EF786D8283E08A8007F65DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4EF786B6283E08A8007F65DA /* Project object */;
+}

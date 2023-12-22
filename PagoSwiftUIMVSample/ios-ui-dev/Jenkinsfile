@@ -1,0 +1,31 @@
+pipeline {
+    agent { label 'mac-mini-slave' }
+
+    environment {
+        LC_ALL = 'en_US.UTF-8'
+        APP_NAME = 'PagoUISDK'
+        BUILD_NAME = 'PagoUISDK'
+        APP_TARGET = 'PagoUISDK'
+        APP_PROJECT = 'PagoUI.xcodeproj'
+        APP_WORKSPACE = 'PagoUI.xcworkspace'
+        APP_TEST_SCHEME = 'PagoUISDK'
+        PUBLISH_TO_CHANNEL = 'slack'
+    }
+
+    stages {
+        stage('Unit Test cases') {
+            steps {
+                script {
+                    try {
+                        sh "fastlane tests"
+                    } catch(exc) {
+                        currentBuild.result = "UNSTABLE"
+                        error('There are failed tests.')
+                    }
+                }
+            }
+
+        }
+    }
+
+}

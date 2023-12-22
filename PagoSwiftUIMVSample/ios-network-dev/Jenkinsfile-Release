@@ -1,0 +1,88 @@
+def gitTag = null
+def artefactHash = null
+def artefactUrl = null
+def generatedNotes = null
+
+pipeline {
+    agent { label 'mac-mini-slave' }
+
+    environment {
+        LC_ALL = 'en_US.UTF-8'
+        APP_NAME = 'PagoApiClient'
+        BUILD_NAME = 'PagoApiClient'
+        APP_TARGET = 'PagoApiClient'
+        APP_PROJECT = 'PagoApiClient.xcodeproj'
+        APP_WORKSPACE = 'PagoApiClient.xcworkspace'
+        APP_TEST_SCHEME = 'PagoApliClient'
+        PUBLISH_TO_CHANNEL = 'slack'
+    }
+
+    stages {
+
+        stage('clean') {
+            steps {
+                script{
+                    sh "rm -rf ./build"
+                }
+            }
+        }
+
+        stage('Unit Tests') {
+            steps {
+                script {
+                    try {
+                        sh "fastlane tests"
+                    } catch(exc) {
+                        currentBuild.result = "UNSTABLE"
+                        error('There are failed tests.')
+                    }
+                }
+            }
+        }
+
+        stage('Upgrade version') {
+            steps {
+                script {
+                    gitTag=sh(returnStdout: true, script: "git tag --contains | head -1").trim()
+                    if(gitTag.startsWith("v") || gitTag.startsWith("V")) {
+                        gitTag = gitTag.getAt(1..gitTag.length() - 1)
+                    }
+                    sh "fastlane incremenetVersion version:" + gitTag
+                }
+            }
+        }
+        
+        stage('Build artefact') {
+            steps {
+                script {
+                    try {
+                        sh "fastlane build_sdk"
+                        sh "zip -r build/PagoApiClient.zip build/PagoApiClient.xcframework"
+                    } catch(exc) {
+                        currentBuild.result = "FAILED"
+                    }
+                }
+            }
+        }
+
+        stage('Upload artefact') {
+            steps {
+                script {
+                    artefactHash = sh(returnStdout: true, script: "shasum -a 256 build/PagoApiClient.zip | sed 's/ .*//'")    
+
+                    sh(returnStdout: true, script: "gh release create " +  gitTag + " -p --generate-notes --title '" + gitTag + "'")
+                    sh(returnStdout: true, script: "gh release upload " + gitTag + " build/PagoApiClient.zip")
+
+
+                    artefactUrl = sh(returnStdout: true, script: "gh release view " + gitTag + " --json apiUrl")
+                    artefactUrl = artefactUrl.substring(artefactUrl.lastIndexOf("\":\"") + 3)
+                    artefactUrl = artefactUrl.substring(0, artefactUrl.length()-3)
+
+                    sh(returnStdout: true, script: "echo 'Hash: " + artefactHash + "\nURL: " + artefactUrl + ".zip' > build/notes.md")
+
+                    sh(returnStdout: true, script: "gh release upload " + gitTag + " build/notes.md")
+                }
+            }
+        }
+    }
+}

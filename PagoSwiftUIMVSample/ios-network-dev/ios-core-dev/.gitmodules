@@ -1,0 +1,3 @@
+[submodule "ios-core-release"]
+	path = ios-core-release
+	url = git@github.com:PagoSDK/ios-core-release.git
